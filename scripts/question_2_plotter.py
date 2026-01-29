@@ -160,13 +160,21 @@ def plot_hop_count_vs_rtt(csv_path: Path, output_pdf: Path):
     fig.patch.set_facecolor('white')
     ax.set_facecolor('white')
     
-    # Create scatter plot
-    scatter = ax.scatter(hop_counts, rtts, s=100, alpha=0.7, edgecolors='black', linewidth=1.5)
+    # Assign colors to each destination
+    num_destinations = len(dest_labels)
+    colors = plt.cm.tab10(range(num_destinations)) if num_destinations <= 10 else plt.cm.tab20(range(num_destinations))
+    color_map = dict(zip(dest_labels, colors))
     
-    # Add labels for each point (destination IP)
-    for i, (hop, rtt, dest) in enumerate(zip(hop_counts, rtts, dest_labels)):
-        ax.annotate(dest, (hop, rtt), xytext=(5, 5), textcoords='offset points', 
-                   fontsize=8, alpha=0.8)
+    # Create scatter plot with color coding - plot each destination separately for legend
+    for hop, rtt, dest in zip(hop_counts, rtts, dest_labels):
+        ax.scatter(hop, rtt, s=100, alpha=0.7, edgecolors='black', linewidth=1.5,
+                  c=[color_map[dest]], label=dest)
+    
+    # Add legend in bottom right corner (remove duplicate labels)
+    handles, labels = ax.get_legend_handles_labels()
+    by_label = dict(zip(labels, handles))
+    ax.legend(by_label.values(), by_label.keys(), bbox_to_anchor=(1.0, 0.0), loc='lower right', 
+              fontsize=8, framealpha=0.9, title='Destination IP', title_fontsize=9)
     
     # Styling
     ax.set_title("Hop Count vs RTT by Destination", fontsize=11, fontweight='bold', pad=12)
