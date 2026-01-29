@@ -1,0 +1,21 @@
+traceroute to 209.58.159.68 (209.58.159.68), 30 hops max, 60 byte packets
+ 1  lamb-20-c7710-05-vlan1735.tcom.purdue.edu (128.210.6.67)  0.700 ms  0.972 ms  1.205 ms
+ 2  * * *
+ 3  * * *
+ 4  172.28.164.98 (172.28.164.98)  1.793 ms 172.28.164.99 (172.28.164.99)  0.940 ms  1.054 ms
+ 5  192.168.18.2 (192.168.18.2)  0.917 ms 192.168.18.4 (192.168.18.4)  0.937 ms  0.805 ms
+ 6  172.28.249.206 (172.28.249.206)  0.439 ms  0.493 ms  0.428 ms
+ 7  172.28.249.202 (172.28.249.202)  0.493 ms 172.28.252.105 (172.28.252.105)  0.927 ms  0.824 ms
+ 8  * 172.28.252.105 (172.28.252.105)  0.829 ms *
+ 9  38.101.160.251 (38.101.160.251)  8.215 ms *  8.129 ms
+10  38.101.160.251 (38.101.160.251)  8.096 ms ipls-b2-link.ip.twelve99.net (62.115.162.76)  2.776 ms 38.101.160.251 (38.101.160.251)  8.052 ms
+11  ipls-b4-link.ip.twelve99.net (62.115.141.44)  4.913 ms  4.879 ms ipls-b2-link.ip.twelve99.net (62.115.162.76)  2.734 ms
+12  ipls-b4-link.ip.twelve99.net (62.115.141.44)  4.760 ms chi-bb1-link.ip.twelve99.net (62.115.123.144)  7.011 ms ipls-b4-link.ip.twelve99.net (62.115.141.44)  4.902 ms
+13  chi-b23-link.ip.twelve99.net (62.115.140.109)  27.650 ms  27.786 ms chi-bb1-link.ip.twelve99.net (62.115.123.144)  6.906 ms
+14  chi-b24-link.ip.twelve99.net (62.115.115.71)  28.427 ms chi-bb2-link.ip.twelve99.net (62.115.137.28)  6.233 ms chi-b24-link.ip.twelve99.net (62.115.115.71)  27.811 ms
+15  * * *
+16  dls-b7-link.ip.twelve99.net (62.115.139.189)  28.357 ms  54.546 ms  28.291 ms
+17  dls-b7-link.ip.twelve99.net (62.115.139.189)  28.259 ms dls-b23-link.ip.twelve99.net (62.115.138.65)  27.807 ms  27.772 ms
+18  dls-b23-link.ip.twelve99.net (62.115.138.65)  27.802 ms leaseweb-ic-367984.ip.twelve99-cust.net (62.115.184.93)  25.701 ms leaseweb-ic-367985.ip.twelve99-cust.net (62.115.184.95)  26.224 ms
+19  po-1.ce01.dal-13.us.leaseweb.net (173.208.123.3)  25.704 ms po-2.ce02.dal-13.us.leaseweb.net (173.208.123.9)  25.907 ms po-1.ce01.dal-13.us.leaseweb.net (173.208.123.3)  25.628 ms
+20  po-1.ce01.dal-13.us.leaseweb.net (173.208.123.3)  25.654 ms po-2.ce01.dal-13.us.leaseweb.net (173.208.123.7)  26.039 ms po-1.ce02.dal-13.us.leaseweb.net (173.208.123.5)  25.674 ms
