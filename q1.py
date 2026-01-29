@@ -10,9 +10,9 @@ import math
 import sys
 import re
 from pathlib import Path
-from typing import Optional, Tuple
 import csv
 import time
+import matplotlib.pyplot as plt
 
 import pandas as pd
 import requests
@@ -109,6 +109,16 @@ def main():
 
     df["distance_km"] = distances
     df.to_csv(output_csv, index=False)
+
+    plt.figure()
+    plt.scatter(df["distance_km"], df["avg_ms"])
+    plt.xlabel("Distance (km)")
+    plt.ylabel("Average RTT (ms)")
+    plt.title("RTT vs Distance")
+    plt.tight_layout()
+    out_pdf = "q1_rtt_vs_distance.pdf"
+    plt.savefig(out_pdf)
+    plt.close()
 
 
 if __name__ == "__main__":
