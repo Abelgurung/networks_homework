@@ -93,6 +93,8 @@ def main():
     dest_col = df.columns[0]
 
     distances = []
+    lats = []
+    lons = []
     for raw in df[dest_col].astype(str):
         ip = raw.strip()
         if not ip:
@@ -105,8 +107,12 @@ def main():
             continue
 
         lat, lon = loc
+        lats.append(lat)
+        lons.append(lon)
         distances.append(haversine_km(MY_LAT, MY_LON, lat, lon))
 
+    df["latitudes"] = lats
+    df["longitudes"] = lons
     df["distance_km"] = distances
     df.to_csv(output_csv, index=False)
 
