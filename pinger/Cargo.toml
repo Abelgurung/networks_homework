@@ -1,0 +1,12 @@
+[package]
+name = "pinger"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5.55", features = ["derive"] }
+clio = { version = "0.3.5", features = ["clap-parse"] }
+dns-lookup = "3.0.1"
+rand = "0.9.2"
+surge-ping = "0.8.4"
+tokio = { version = "1.49.0", features = ["rt-multi-thread"] }
