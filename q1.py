@@ -28,7 +28,7 @@ def haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     a = math.sin(dphi / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dlmb / 2) ** 2
     return 2 * R * math.asin(math.sqrt(a))
 
-def geolocate_ip(ip: str) -> Optional[Tuple[float, float]]:
+def geolocate_ip(ip: str):
     delay = 1.0
     for attempt in range(10):
         url = IP_API_SINGLE_URL.format(ip)
