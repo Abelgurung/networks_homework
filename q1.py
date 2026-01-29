@@ -120,10 +120,30 @@ def main():
     plt.scatter(df["distance_km"], df["avg_ms"])
     plt.xlabel("Distance (km)")
     plt.ylabel("Average RTT (ms)")
-    plt.title("RTT vs Distance")
+    plt.title("Average RTT vs Distance")
     plt.tight_layout()
-    out_pdf = "q1_rtt_vs_distance.pdf"
-    plt.savefig(out_pdf)
+    out_pdf1 = "q1_avg_rtt_vs_distance.pdf"
+    plt.savefig(out_pdf1)
+    plt.close()
+
+    plt.figure()
+    plt.scatter(df["distance_km"], df["max_ms"])
+    plt.xlabel("Distance (km)")
+    plt.ylabel("Max RTT (ms)")
+    plt.title("Max RTT vs Distance")
+    plt.tight_layout()
+    out_pdf2 = "q1_max_rtt_vs_distance.pdf"
+    plt.savefig(out_pdf2)
+    plt.close()
+
+    plt.figure()
+    plt.scatter(df["distance_km"], df["min_ms"])
+    plt.xlabel("Distance (km)")
+    plt.ylabel("Min RTT (ms)")
+    plt.title("Min RTT vs Distance")
+    plt.tight_layout()
+    out_pdf3 = "q1_min_rtt_vs_distance.pdf"
+    plt.savefig(out_pdf3)
     plt.close()
 
 
