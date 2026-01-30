@@ -1,3 +1,6 @@
+cargo -Z unstable-options -C pinger build --release
+./pinger/target/release/pinger list.txt | tee data.txt
+
 if [[ ! -d ".venv" ]]; then
   python3 -m venv .venv
 fi
