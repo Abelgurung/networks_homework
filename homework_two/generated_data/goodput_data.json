@@ -1,0 +1,3874 @@
+[
+  {
+    "server_label": "speedtest.wobcom.de:5201 (Wolfsburg, DE)",
+    "server_host": "speedtest.wobcom.de",
+    "server_port": 5201,
+    "bytes_sent": 173932544,
+    "duration": 30.25863733398728,
+    "bitrate_bps": 45985558.98738626,
+    "goodput_samples": [
+      {
+        "t": 0.5004,
+        "goodput_bps": 1597259.3523062724,
+        "bytes_acked": 99912,
+        "interval_sec": 0.5004
+      },
+      {
+        "t": 0.745,
+        "goodput_bps": 9569017.223371862,
+        "bytes_acked": 292496,
+        "interval_sec": 0.2445
+      },
+      {
+        "t": 1.1961,
+        "goodput_bps": 23905938.577303257,
+        "bytes_acked": 1348088,
+        "interval_sec": 0.4511
+      },
+      {
+        "t": 1.6359,
+        "goodput_bps": 27414622.262305874,
+        "bytes_acked": 1507120,
+        "interval_sec": 0.4398
+      },
+      {
+        "t": 1.863,
+        "goodput_bps": 23801556.788548306,
+        "bytes_acked": 675720,
+        "interval_sec": 0.2271
+      },
+      {
+        "t": 2.0819,
+        "goodput_bps": 23497073.656501725,
+        "bytes_acked": 642912,
+        "interval_sec": 0.2189
+      },
+      {
+        "t": 2.3209,
+        "goodput_bps": 26070454.09171899,
+        "bytes_acked": 779024,
+        "interval_sec": 0.2391
+      },
+      {
+        "t": 2.5617,
+        "goodput_bps": 25310945.205084547,
+        "bytes_acked": 761648,
+        "interval_sec": 0.2407
+      },
+      {
+        "t": 2.7951,
+        "goodput_bps": 26749123.75518015,
+        "bytes_acked": 780472,
+        "interval_sec": 0.2334
+      },
+      {
+        "t": 3.054,
+        "goodput_bps": 27564238.79895016,
+        "bytes_acked": 891968,
+        "interval_sec": 0.2589
+      },
+      {
+        "t": 3.2829,
+        "goodput_bps": 27531347.38358197,
+        "bytes_acked": 787712,
+        "interval_sec": 0.2289
+      },
+      {
+        "t": 3.5392,
+        "goodput_bps": 28514132.51608251,
+        "bytes_acked": 913688,
+        "interval_sec": 0.2563
+      },
+      {
+        "t": 3.787,
+        "goodput_bps": 28698797.237761408,
+        "bytes_acked": 889072,
+        "interval_sec": 0.2478
+      },
+      {
+        "t": 4.0399,
+        "goodput_bps": 29040574.422377724,
+        "bytes_acked": 918032,
+        "interval_sec": 0.2529
+      },
+      {
+        "t": 4.2663,
+        "goodput_bps": 27589712.040814787,
+        "bytes_acked": 780472,
+        "interval_sec": 0.2263
+      },
+      {
+        "t": 4.5153,
+        "goodput_bps": 29345970.075903285,
+        "bytes_acked": 913688,
+        "interval_sec": 0.2491
+      },
+      {
+        "t": 4.7673,
+        "goodput_bps": 29420723.599672273,
+        "bytes_acked": 926720,
+        "interval_sec": 0.252
+      },
+      {
+        "t": 5.0134,
+        "goodput_bps": 29424794.03696432,
+        "bytes_acked": 905000,
+        "interval_sec": 0.2461
+      },
+      {
+        "t": 5.2617,
+        "goodput_bps": 29435162.831530187,
+        "bytes_acked": 913688,
+        "interval_sec": 0.2483
+      },
+      {
+        "t": 5.5073,
+        "goodput_bps": 29909304.949125562,
+        "bytes_acked": 918032,
+        "interval_sec": 0.2456
+      },
+      {
+        "t": 5.7563,
+        "goodput_bps": 29630802.05613202,
+        "bytes_acked": 922376,
+        "interval_sec": 0.249
+      },
+      {
+        "t": 5.9645,
+        "goodput_bps": 29933900.710949585,
+        "bytes_acked": 779024,
+        "interval_sec": 0.2082
+      },
+      {
+        "t": 6.1791,
+        "goodput_bps": 28825084.83753718,
+        "bytes_acked": 773232,
+        "interval_sec": 0.2146
+      },
+      {
+        "t": 6.4031,
+        "goodput_bps": 28234550.456231266,
+        "bytes_acked": 790608,
+        "interval_sec": 0.224
+      },
+      {
+        "t": 6.6097,
+        "goodput_bps": 30729238.578577563,
+        "bytes_acked": 793504,
+        "interval_sec": 0.2066
+      },
+      {
+        "t": 6.8242,
+        "goodput_bps": 31264369.06525201,
+        "bytes_acked": 838392,
+        "interval_sec": 0.2145
+      },
+      {
+        "t": 7.0393,
+        "goodput_bps": 29355764.183145463,
+        "bytes_acked": 789160,
+        "interval_sec": 0.2151
+      },
+      {
+        "t": 7.2633,
+        "goodput_bps": 27969432.18000584,
+        "bytes_acked": 783368,
+        "interval_sec": 0.2241
+      },
+      {
+        "t": 7.4707,
+        "goodput_bps": 30674282.870039362,
+        "bytes_acked": 794952,
+        "interval_sec": 0.2073
+      },
+      {
+        "t": 7.6777,
+        "goodput_bps": 30104147.57653793,
+        "bytes_acked": 779024,
+        "interval_sec": 0.207
+      },
+      {
+        "t": 7.9023,
+        "goodput_bps": 28103383.974450596,
+        "bytes_acked": 789160,
+        "interval_sec": 0.2246
+      },
+      {
+        "t": 8.1168,
+        "goodput_bps": 29494572.249655437,
+        "bytes_acked": 790608,
+        "interval_sec": 0.2144
+      },
+      {
+        "t": 8.3597,
+        "goodput_bps": 29950228.467420742,
+        "bytes_acked": 909344,
+        "interval_sec": 0.2429
+      },
+      {
+        "t": 8.5602,
+        "goodput_bps": 31763323.832636315,
+        "bytes_acked": 796400,
+        "interval_sec": 0.2006
+      },
+      {
+        "t": 8.7641,
+        "goodput_bps": 25743716.581055567,
+        "bytes_acked": 655944,
+        "interval_sec": 0.2038
+      },
+      {
+        "t": 9.0062,
+        "goodput_bps": 29996171.585748725,
+        "bytes_acked": 907896,
+        "interval_sec": 0.2421
+      },
+      {
+        "t": 9.209,
+        "goodput_bps": 31474626.129881345,
+        "bytes_acked": 797848,
+        "interval_sec": 0.2028
+      },
+      {
+        "t": 9.4108,
+        "goodput_bps": 31221334.73278291,
+        "bytes_acked": 787712,
+        "interval_sec": 0.2018
+      },
+      {
+        "t": 9.6386,
+        "goodput_bps": 27671619.68500632,
+        "bytes_acked": 787712,
+        "interval_sec": 0.2277
+      },
+      {
+        "t": 9.8461,
+        "goodput_bps": 30195803.43867572,
+        "bytes_acked": 783368,
+        "interval_sec": 0.2075
+      },
+      {
+        "t": 10.0593,
+        "goodput_bps": 34176253.8378491,
+        "bytes_acked": 910792,
+        "interval_sec": 0.2132
+      },
+      {
+        "t": 10.2734,
+        "goodput_bps": 29767650.49122973,
+        "bytes_acked": 796400,
+        "interval_sec": 0.214
+      },
+      {
+        "t": 10.4936,
+        "goodput_bps": 28350827.498974387,
+        "bytes_acked": 780472,
+        "interval_sec": 0.2202
+      },
+      {
+        "t": 10.7132,
+        "goodput_bps": 33182813.003463466,
+        "bytes_acked": 910792,
+        "interval_sec": 0.2196
+      },
+      {
+        "t": 10.9733,
+        "goodput_bps": 31926361.2679382,
+        "bytes_acked": 1038216,
+        "interval_sec": 0.2602
+      },
+      {
+        "t": 11.2203,
+        "goodput_bps": 32648180.11776521,
+        "bytes_acked": 1007808,
+        "interval_sec": 0.2469
+      },
+      {
+        "t": 11.4395,
+        "goodput_bps": 33605585.86403239,
+        "bytes_acked": 920928,
+        "interval_sec": 0.2192
+      },
+      {
+        "t": 11.6796,
+        "goodput_bps": 34402188.02841026,
+        "bytes_acked": 1032424,
+        "interval_sec": 0.2401
+      },
+      {
+        "t": 11.8934,
+        "goodput_bps": 37374097.63608794,
+        "bytes_acked": 999120,
+        "interval_sec": 0.2139
+      },
+      {
+        "t": 12.1184,
+        "goodput_bps": 33001834.555394735,
+        "bytes_acked": 928168,
+        "interval_sec": 0.225
+      },
+      {
+        "t": 12.3459,
+        "goodput_bps": 35959719.29207922,
+        "bytes_acked": 1022288,
+        "interval_sec": 0.2274
+      },
+      {
+        "t": 12.5621,
+        "goodput_bps": 37767216.78165419,
+        "bytes_acked": 1020840,
+        "interval_sec": 0.2162
+      },
+      {
+        "t": 12.7745,
+        "goodput_bps": 38117969.33174593,
+        "bytes_acked": 1012152,
+        "interval_sec": 0.2124
+      },
+      {
+        "t": 12.9989,
+        "goodput_bps": 36818810.82568961,
+        "bytes_acked": 1032424,
+        "interval_sec": 0.2243
+      },
+      {
+        "t": 13.2198,
+        "goodput_bps": 40632491.52834841,
+        "bytes_acked": 1122200,
+        "interval_sec": 0.2209
+      },
+      {
+        "t": 13.427,
+        "goodput_bps": 39980892.523268305,
+        "bytes_acked": 1035320,
+        "interval_sec": 0.2072
+      },
+      {
+        "t": 13.6571,
+        "goodput_bps": 39006106.71368233,
+        "bytes_acked": 1122200,
+        "interval_sec": 0.2302
+      },
+      {
+        "t": 13.8633,
+        "goodput_bps": 45119742.98299051,
+        "bytes_acked": 1162744,
+        "interval_sec": 0.2062
+      },
+      {
+        "t": 14.0766,
+        "goodput_bps": 47040162.99155679,
+        "bytes_acked": 1253968,
+        "interval_sec": 0.2133
+      },
+      {
+        "t": 14.2918,
+        "goodput_bps": 42788807.82441977,
+        "bytes_acked": 1151160,
+        "interval_sec": 0.2152
+      },
+      {
+        "t": 14.5136,
+        "goodput_bps": 45894226.67675048,
+        "bytes_acked": 1272792,
+        "interval_sec": 0.2219
+      },
+      {
+        "t": 14.7427,
+        "goodput_bps": 48596628.157102525,
+        "bytes_acked": 1391528,
+        "interval_sec": 0.2291
+      },
+      {
+        "t": 14.9449,
+        "goodput_bps": 54531316.04312455,
+        "bytes_acked": 1378496,
+        "interval_sec": 0.2022
+      },
+      {
+        "t": 15.151,
+        "goodput_bps": 48751051.28064775,
+        "bytes_acked": 1255416,
+        "interval_sec": 0.206
+      },
+      {
+        "t": 15.3739,
+        "goodput_bps": 49881258.49498355,
+        "bytes_acked": 1390080,
+        "interval_sec": 0.2229
+      },
+      {
+        "t": 15.5934,
+        "goodput_bps": 59743691.20405465,
+        "bytes_acked": 1639136,
+        "interval_sec": 0.2195
+      },
+      {
+        "t": 15.8029,
+        "goodput_bps": 53132140.63022616,
+        "bytes_acked": 1391528,
+        "interval_sec": 0.2095
+      },
+      {
+        "t": 16.0077,
+        "goodput_bps": 59227408.25625822,
+        "bytes_acked": 1516056,
+        "interval_sec": 0.2048
+      },
+      {
+        "t": 16.2097,
+        "goodput_bps": 63886873.09491809,
+        "bytes_acked": 1613072,
+        "interval_sec": 0.202
+      },
+      {
+        "t": 16.4163,
+        "goodput_bps": 59032667.12315963,
+        "bytes_acked": 1524744,
+        "interval_sec": 0.2066
+      },
+      {
+        "t": 16.6328,
+        "goodput_bps": 65273601.69570196,
+        "bytes_acked": 1766560,
+        "interval_sec": 0.2165
+      },
+      {
+        "t": 16.8354,
+        "goodput_bps": 74223878.12574807,
+        "bytes_acked": 1879504,
+        "interval_sec": 0.2026
+      },
+      {
+        "t": 17.0455,
+        "goodput_bps": 66985497.14438073,
+        "bytes_acked": 1759320,
+        "interval_sec": 0.2101
+      },
+      {
+        "t": 17.2516,
+        "goodput_bps": 68746759.65417357,
+        "bytes_acked": 1770904,
+        "interval_sec": 0.2061
+      },
+      {
+        "t": 17.4581,
+        "goodput_bps": 82576482.85332356,
+        "bytes_acked": 2131456,
+        "interval_sec": 0.2065
+      },
+      {
+        "t": 17.6671,
+        "goodput_bps": 72429569.99013005,
+        "bytes_acked": 1892536,
+        "interval_sec": 0.209
+      },
+      {
+        "t": 17.8857,
+        "goodput_bps": 78383785.86273983,
+        "bytes_acked": 2141592,
+        "interval_sec": 0.2186
+      },
+      {
+        "t": 18.1669,
+        "goodput_bps": 68173655.8211837,
+        "bytes_acked": 2396440,
+        "interval_sec": 0.2812
+      },
+      {
+        "t": 18.3876,
+        "goodput_bps": 56245541.42782204,
+        "bytes_acked": 1551760,
+        "interval_sec": 0.2207
+      },
+      {
+        "t": 18.5978,
+        "goodput_bps": 67360040.9060632,
+        "bytes_acked": 1769456,
+        "interval_sec": 0.2101
+      },
+      {
+        "t": 18.7999,
+        "goodput_bps": 60415868.38229723,
+        "bytes_acked": 1526192,
+        "interval_sec": 0.2021
+      },
+      {
+        "t": 19.012,
+        "goodput_bps": 62743448.17402118,
+        "bytes_acked": 1663752,
+        "interval_sec": 0.2121
+      },
+      {
+        "t": 19.2509,
+        "goodput_bps": 64345610.62983916,
+        "bytes_acked": 1921496,
+        "interval_sec": 0.2389
+      },
+      {
+        "t": 19.4778,
+        "goodput_bps": 72226863.52517723,
+        "bytes_acked": 2048920,
+        "interval_sec": 0.2269
+      },
+      {
+        "t": 19.686,
+        "goodput_bps": 68959296.66673222,
+        "bytes_acked": 1794072,
+        "interval_sec": 0.2081
+      },
+      {
+        "t": 19.9035,
+        "goodput_bps": 66471211.054784335,
+        "bytes_acked": 1807104,
+        "interval_sec": 0.2175
+      },
+      {
+        "t": 20.105,
+        "goodput_bps": 75927253.07590127,
+        "bytes_acked": 1912808,
+        "interval_sec": 0.2015
+      },
+      {
+        "t": 20.3068,
+        "goodput_bps": 71251910.89793654,
+        "bytes_acked": 1796968,
+        "interval_sec": 0.2018
+      },
+      {
+        "t": 20.5156,
+        "goodput_bps": 70709344.74546283,
+        "bytes_acked": 1846200,
+        "interval_sec": 0.2089
+      },
+      {
+        "t": 20.7372,
+        "goodput_bps": 77651936.7853899,
+        "bytes_acked": 2150280,
+        "interval_sec": 0.2215
+      },
+      {
+        "t": 20.9525,
+        "goodput_bps": 72742789.31194706,
+        "bytes_acked": 1957696,
+        "interval_sec": 0.2153
+      },
+      {
+        "t": 21.1683,
+        "goodput_bps": 78085864.46688707,
+        "bytes_acked": 2106840,
+        "interval_sec": 0.2158
+      },
+      {
+        "t": 21.379,
+        "goodput_bps": 77523412.00086764,
+        "bytes_acked": 2041680,
+        "interval_sec": 0.2107
+      },
+      {
+        "t": 21.5891,
+        "goodput_bps": 79108722.53322554,
+        "bytes_acked": 2077880,
+        "interval_sec": 0.2101
+      },
+      {
+        "t": 21.7941,
+        "goodput_bps": 80145522.11777504,
+        "bytes_acked": 2053264,
+        "interval_sec": 0.205
+      },
+      {
+        "t": 22.0021,
+        "goodput_bps": 80823414.06160454,
+        "bytes_acked": 2101048,
+        "interval_sec": 0.208
+      },
+      {
+        "t": 22.2124,
+        "goodput_bps": 78692444.23583776,
+        "bytes_acked": 2069192,
+        "interval_sec": 0.2104
+      },
+      {
+        "t": 22.4163,
+        "goodput_bps": 82373983.17618543,
+        "bytes_acked": 2099600,
+        "interval_sec": 0.2039
+      },
+      {
+        "t": 22.6244,
+        "goodput_bps": 79651383.17511526,
+        "bytes_acked": 2072088,
+        "interval_sec": 0.2081
+      },
+      {
+        "t": 22.8362,
+        "goodput_bps": 83457805.83550763,
+        "bytes_acked": 2209648,
+        "interval_sec": 0.2118
+      },
+      {
+        "t": 23.04,
+        "goodput_bps": 81744299.27095117,
+        "bytes_acked": 2082224,
+        "interval_sec": 0.2038
+      },
+      {
+        "t": 23.2529,
+        "goodput_bps": 78974906.59191887,
+        "bytes_acked": 2101048,
+        "interval_sec": 0.2128
+      },
+      {
+        "t": 23.4612,
+        "goodput_bps": 89835546.22162165,
+        "bytes_acked": 2339968,
+        "interval_sec": 0.2084
+      },
+      {
+        "t": 23.6616,
+        "goodput_bps": 77984690.58121616,
+        "bytes_acked": 1953352,
+        "interval_sec": 0.2004
+      },
+      {
+        "t": 23.862,
+        "goodput_bps": 83542561.42496344,
+        "bytes_acked": 2092360,
+        "interval_sec": 0.2004
+      },
+      {
+        "t": 24.0695,
+        "goodput_bps": 86071596.39312316,
+        "bytes_acked": 2232816,
+        "interval_sec": 0.2075
+      },
+      {
+        "t": 24.2748,
+        "goodput_bps": 76744022.36662124,
+        "bytes_acked": 1969280,
+        "interval_sec": 0.2053
+      },
+      {
+        "t": 24.497,
+        "goodput_bps": 84283095.50981143,
+        "bytes_acked": 2341416,
+        "interval_sec": 0.2222
+      },
+      {
+        "t": 24.6989,
+        "goodput_bps": 88480408.33614014,
+        "bytes_acked": 2232816,
+        "interval_sec": 0.2019
+      },
+      {
+        "t": 24.9104,
+        "goodput_bps": 79058442.92433679,
+        "bytes_acked": 2089464,
+        "interval_sec": 0.2114
+      },
+      {
+        "t": 25.1123,
+        "goodput_bps": 87360882.80665155,
+        "bytes_acked": 2205304,
+        "interval_sec": 0.2019
+      },
+      {
+        "t": 25.3149,
+        "goodput_bps": 82958209.12516215,
+        "bytes_acked": 2101048,
+        "interval_sec": 0.2026
+      },
+      {
+        "t": 25.5174,
+        "goodput_bps": 80386997.86598562,
+        "bytes_acked": 2034440,
+        "interval_sec": 0.2025
+      },
+      {
+        "t": 26.0104,
+        "goodput_bps": 64144021.00548453,
+        "bytes_acked": 3953040,
+        "interval_sec": 0.493
+      },
+      {
+        "t": 26.5225,
+        "goodput_bps": 33384449.040721957,
+        "bytes_acked": 2136808,
+        "interval_sec": 0.512
+      },
+      {
+        "t": 26.9275,
+        "goodput_bps": 30407817.30480686,
+        "bytes_acked": 1539512,
+        "interval_sec": 0.405
+      },
+      {
+        "t": 27.1543,
+        "goodput_bps": 27881773.444312606,
+        "bytes_acked": 790440,
+        "interval_sec": 0.2268
+      },
+      {
+        "t": 27.3901,
+        "goodput_bps": 30112155.294489153,
+        "bytes_acked": 887624,
+        "interval_sec": 0.2358
+      },
+      {
+        "t": 27.6456,
+        "goodput_bps": 31733089.534216784,
+        "bytes_acked": 1013600,
+        "interval_sec": 0.2555
+      },
+      {
+        "t": 27.8972,
+        "goodput_bps": 33015727.34745584,
+        "bytes_acked": 1038216,
+        "interval_sec": 0.2516
+      },
+      {
+        "t": 28.1015,
+        "goodput_bps": 35209898.77269596,
+        "bytes_acked": 899208,
+        "interval_sec": 0.2043
+      },
+      {
+        "t": 28.3424,
+        "goodput_bps": 34380932.36045659,
+        "bytes_acked": 1035320,
+        "interval_sec": 0.2409
+      },
+      {
+        "t": 28.5426,
+        "goodput_bps": 36339767.23944682,
+        "bytes_acked": 909344,
+        "interval_sec": 0.2002
+      },
+      {
+        "t": 28.7514,
+        "goodput_bps": 29795192.398465354,
+        "bytes_acked": 777576,
+        "interval_sec": 0.2088
+      },
+      {
+        "t": 28.9868,
+        "goodput_bps": 35084372.7600178,
+        "bytes_acked": 1032424,
+        "interval_sec": 0.2354
+      },
+      {
+        "t": 29.2135,
+        "goodput_bps": 36587574.556325175,
+        "bytes_acked": 1036768,
+        "interval_sec": 0.2267
+      },
+      {
+        "t": 29.5379,
+        "goodput_bps": 29673440.659299023,
+        "bytes_acked": 1203288,
+        "interval_sec": 0.3244
+      },
+      {
+        "t": 29.7687,
+        "goodput_bps": 30062983.707413662,
+        "bytes_acked": 867264,
+        "interval_sec": 0.2308
+      },
+      {
+        "t": 30.003,
+        "goodput_bps": 18782353.401633386,
+        "bytes_acked": 550240,
+        "interval_sec": 0.2344
+      }
+    ]
+  },
+  {
+    "server_label": "speedtest.chi11.us.leaseweb.net:5202 (Chicago, US)",
+    "server_host": "speedtest.chi11.us.leaseweb.net",
+    "server_port": 5202,
+    "bytes_sent": 476708864,
+    "duration": 30.03720554197207,
+    "bitrate_bps": 126964903.79809201,
+    "goodput_samples": [
+      {
+        "t": 0.201,
+        "goodput_bps": 75403098.97615838,
+        "bytes_acked": 1894528,
+        "interval_sec": 0.201
+      },
+      {
+        "t": 0.405,
+        "goodput_bps": 159649969.39586583,
+        "bytes_acked": 4071776,
+        "interval_sec": 0.204
+      },
+      {
+        "t": 0.6105,
+        "goodput_bps": 175383460.12216932,
+        "bytes_acked": 4503280,
+        "interval_sec": 0.2054
+      },
+      {
+        "t": 0.8118,
+        "goodput_bps": 171532231.5835476,
+        "bytes_acked": 4316488,
+        "interval_sec": 0.2013
+      },
+      {
+        "t": 1.0168,
+        "goodput_bps": 143487223.5151204,
+        "bytes_acked": 3678008,
+        "interval_sec": 0.2051
+      },
+      {
+        "t": 1.2212,
+        "goodput_bps": 153481071.9315904,
+        "bytes_acked": 3921184,
+        "interval_sec": 0.2044
+      },
+      {
+        "t": 1.4227,
+        "goodput_bps": 140460556.46539858,
+        "bytes_acked": 3537464,
+        "interval_sec": 0.2015
+      },
+      {
+        "t": 1.6248,
+        "goodput_bps": 154841008.91681528,
+        "bytes_acked": 3912496,
+        "interval_sec": 0.2021
+      },
+      {
+        "t": 1.8277,
+        "goodput_bps": 148609834.11246467,
+        "bytes_acked": 3769144,
+        "interval_sec": 0.2029
+      },
+      {
+        "t": 2.0304,
+        "goodput_bps": 143382686.53264564,
+        "bytes_acked": 3633032,
+        "interval_sec": 0.2027
+      },
+      {
+        "t": 2.2351,
+        "goodput_bps": 157781894.42334574,
+        "bytes_acked": 4037024,
+        "interval_sec": 0.2047
+      },
+      {
+        "t": 2.4391,
+        "goodput_bps": 139078419.45893273,
+        "bytes_acked": 3546152,
+        "interval_sec": 0.204
+      },
+      {
+        "t": 2.6418,
+        "goodput_bps": 116989088.58642094,
+        "bytes_acked": 2963712,
+        "interval_sec": 0.2027
+      },
+      {
+        "t": 2.8506,
+        "goodput_bps": 129429315.26906891,
+        "bytes_acked": 3378184,
+        "interval_sec": 0.2088
+      },
+      {
+        "t": 3.0512,
+        "goodput_bps": 135679803.49503142,
+        "bytes_acked": 3402800,
+        "interval_sec": 0.2006
+      },
+      {
+        "t": 3.2551,
+        "goodput_bps": 126847380.55885127,
+        "bytes_acked": 3233384,
+        "interval_sec": 0.2039
+      },
+      {
+        "t": 3.4567,
+        "goodput_bps": 144103648.0316377,
+        "bytes_acked": 3630136,
+        "interval_sec": 0.2015
+      },
+      {
+        "t": 3.6627,
+        "goodput_bps": 146303288.09948292,
+        "bytes_acked": 3767696,
+        "interval_sec": 0.206
+      },
+      {
+        "t": 3.8646,
+        "goodput_bps": 149010770.6346857,
+        "bytes_acked": 3760456,
+        "interval_sec": 0.2019
+      },
+      {
+        "t": 4.0678,
+        "goodput_bps": 144674948.52192423,
+        "bytes_acked": 3675024,
+        "interval_sec": 0.2032
+      },
+      {
+        "t": 4.2728,
+        "goodput_bps": 168129054.22981635,
+        "bytes_acked": 4307800,
+        "interval_sec": 0.205
+      },
+      {
+        "t": 4.4792,
+        "goodput_bps": 172928298.21817455,
+        "bytes_acked": 4461288,
+        "interval_sec": 0.2064
+      },
+      {
+        "t": 4.6833,
+        "goodput_bps": 174585036.6450497,
+        "bytes_acked": 4454048,
+        "interval_sec": 0.2041
+      },
+      {
+        "t": 4.8834,
+        "goodput_bps": 178306534.44863415,
+        "bytes_acked": 4461288,
+        "interval_sec": 0.2002
+      },
+      {
+        "t": 5.0879,
+        "goodput_bps": 182316864.52208158,
+        "bytes_acked": 4661112,
+        "interval_sec": 0.2045
+      },
+      {
+        "t": 5.2917,
+        "goodput_bps": 161140657.24684232,
+        "bytes_acked": 4104600,
+        "interval_sec": 0.2038
+      },
+      {
+        "t": 5.4979,
+        "goodput_bps": 109740342.10358489,
+        "bytes_acked": 2827800,
+        "interval_sec": 0.2061
+      },
+      {
+        "t": 5.7015,
+        "goodput_bps": 100894380.15969987,
+        "bytes_acked": 2568752,
+        "interval_sec": 0.2037
+      },
+      {
+        "t": 5.9068,
+        "goodput_bps": 122307197.6267756,
+        "bytes_acked": 3137816,
+        "interval_sec": 0.2052
+      },
+      {
+        "t": 6.1161,
+        "goodput_bps": 117992965.95431341,
+        "bytes_acked": 3087136,
+        "interval_sec": 0.2093
+      },
+      {
+        "t": 6.3163,
+        "goodput_bps": 120139475.86929296,
+        "bytes_acked": 3006048,
+        "interval_sec": 0.2002
+      },
+      {
+        "t": 6.5205,
+        "goodput_bps": 128615950.57397255,
+        "bytes_acked": 3282616,
+        "interval_sec": 0.2042
+      },
+      {
+        "t": 6.7222,
+        "goodput_bps": 129210806.01364884,
+        "bytes_acked": 3258000,
+        "interval_sec": 0.2017
+      },
+      {
+        "t": 6.9294,
+        "goodput_bps": 124745889.60553606,
+        "bytes_acked": 3231936,
+        "interval_sec": 0.2073
+      },
+      {
+        "t": 7.1325,
+        "goodput_bps": 137846456.81956273,
+        "bytes_acked": 3499816,
+        "interval_sec": 0.2031
+      },
+      {
+        "t": 7.3477,
+        "goodput_bps": 142920357.05872026,
+        "bytes_acked": 3844440,
+        "interval_sec": 0.2152
+      },
+      {
+        "t": 7.5577,
+        "goodput_bps": 117990204.3124525,
+        "bytes_acked": 3096648,
+        "interval_sec": 0.21
+      },
+      {
+        "t": 7.7619,
+        "goodput_bps": 123325797.60740666,
+        "bytes_acked": 3147952,
+        "interval_sec": 0.2042
+      },
+      {
+        "t": 7.9628,
+        "goodput_bps": 113327498.82468964,
+        "bytes_acked": 2845320,
+        "interval_sec": 0.2009
+      },
+      {
+        "t": 8.1675,
+        "goodput_bps": 132350067.07061508,
+        "bytes_acked": 3386872,
+        "interval_sec": 0.2047
+      },
+      {
+        "t": 8.369,
+        "goodput_bps": 108701472.03327507,
+        "bytes_acked": 2738168,
+        "interval_sec": 0.2015
+      },
+      {
+        "t": 8.5693,
+        "goodput_bps": 101302803.76291779,
+        "bytes_acked": 2536752,
+        "interval_sec": 0.2003
+      },
+      {
+        "t": 8.7694,
+        "goodput_bps": 103587846.60548684,
+        "bytes_acked": 2590472,
+        "interval_sec": 0.2001
+      },
+      {
+        "t": 8.9748,
+        "goodput_bps": 111630834.43597871,
+        "bytes_acked": 2865592,
+        "interval_sec": 0.2054
+      },
+      {
+        "t": 9.1808,
+        "goodput_bps": 112062732.47716004,
+        "bytes_acked": 2885864,
+        "interval_sec": 0.206
+      },
+      {
+        "t": 9.3816,
+        "goodput_bps": 108480803.57669893,
+        "bytes_acked": 2723688,
+        "interval_sec": 0.2009
+      },
+      {
+        "t": 9.5834,
+        "goodput_bps": 123394262.19414146,
+        "bytes_acked": 3111752,
+        "interval_sec": 0.2017
+      },
+      {
+        "t": 9.7844,
+        "goodput_bps": 122738875.58003174,
+        "bytes_acked": 3084240,
+        "interval_sec": 0.201
+      },
+      {
+        "t": 9.9909,
+        "goodput_bps": 112266658.04465121,
+        "bytes_acked": 2898400,
+        "interval_sec": 0.2065
+      },
+      {
+        "t": 10.1927,
+        "goodput_bps": 108704193.35331896,
+        "bytes_acked": 2741064,
+        "interval_sec": 0.2017
+      },
+      {
+        "t": 10.3932,
+        "goodput_bps": 98901073.37588142,
+        "bytes_acked": 2478976,
+        "interval_sec": 0.2005
+      },
+      {
+        "t": 10.5968,
+        "goodput_bps": 117362906.25264955,
+        "bytes_acked": 2987224,
+        "interval_sec": 0.2036
+      },
+      {
+        "t": 10.7975,
+        "goodput_bps": 119442047.74939097,
+        "bytes_acked": 2995912,
+        "interval_sec": 0.2007
+      },
+      {
+        "t": 10.9983,
+        "goodput_bps": 114247778.15099487,
+        "bytes_acked": 2868488,
+        "interval_sec": 0.2009
+      },
+      {
+        "t": 11.2011,
+        "goodput_bps": 128519337.41593641,
+        "bytes_acked": 3258000,
+        "interval_sec": 0.2028
+      },
+      {
+        "t": 11.4036,
+        "goodput_bps": 128813612.62712246,
+        "bytes_acked": 3259448,
+        "interval_sec": 0.2024
+      },
+      {
+        "t": 11.6054,
+        "goodput_bps": 119561023.77365014,
+        "bytes_acked": 3016184,
+        "interval_sec": 0.2018
+      },
+      {
+        "t": 11.8114,
+        "goodput_bps": 125681310.52244648,
+        "bytes_acked": 3236280,
+        "interval_sec": 0.206
+      },
+      {
+        "t": 12.0204,
+        "goodput_bps": 106520558.93695885,
+        "bytes_acked": 2782560,
+        "interval_sec": 0.209
+      },
+      {
+        "t": 12.2255,
+        "goodput_bps": 110735516.76190297,
+        "bytes_acked": 2839528,
+        "interval_sec": 0.2051
+      },
+      {
+        "t": 12.4328,
+        "goodput_bps": 105518526.97913843,
+        "bytes_acked": 2733824,
+        "interval_sec": 0.2073
+      },
+      {
+        "t": 12.6376,
+        "goodput_bps": 116822948.69131343,
+        "bytes_acked": 2991568,
+        "interval_sec": 0.2049
+      },
+      {
+        "t": 12.842,
+        "goodput_bps": 112679531.79029146,
+        "bytes_acked": 2878624,
+        "interval_sec": 0.2044
+      },
+      {
+        "t": 13.0427,
+        "goodput_bps": 114475634.59210919,
+        "bytes_acked": 2871384,
+        "interval_sec": 0.2007
+      },
+      {
+        "t": 13.2431,
+        "goodput_bps": 129590763.16921623,
+        "bytes_acked": 3246416,
+        "interval_sec": 0.2004
+      },
+      {
+        "t": 13.4541,
+        "goodput_bps": 105714632.10718606,
+        "bytes_acked": 2788208,
+        "interval_sec": 0.211
+      },
+      {
+        "t": 13.6626,
+        "goodput_bps": 94496072.16013765,
+        "bytes_acked": 2463048,
+        "interval_sec": 0.2085
+      },
+      {
+        "t": 13.871,
+        "goodput_bps": 104298670.00815906,
+        "bytes_acked": 2716448,
+        "interval_sec": 0.2084
+      },
+      {
+        "t": 14.079,
+        "goodput_bps": 106926017.86161785,
+        "bytes_acked": 2780160,
+        "interval_sec": 0.208
+      },
+      {
+        "t": 14.2853,
+        "goodput_bps": 104600457.36766857,
+        "bytes_acked": 2697624,
+        "interval_sec": 0.2063
+      },
+      {
+        "t": 14.4861,
+        "goodput_bps": 103487286.7524284,
+        "bytes_acked": 2597712,
+        "interval_sec": 0.2008
+      },
+      {
+        "t": 14.6925,
+        "goodput_bps": 120553640.04072803,
+        "bytes_acked": 3110304,
+        "interval_sec": 0.2064
+      },
+      {
+        "t": 14.8928,
+        "goodput_bps": 94151248.45074983,
+        "bytes_acked": 2356848,
+        "interval_sec": 0.2003
+      },
+      {
+        "t": 15.0953,
+        "goodput_bps": 108364427.07731408,
+        "bytes_acked": 2743960,
+        "interval_sec": 0.2026
+      },
+      {
+        "t": 15.3027,
+        "goodput_bps": 100341494.6642172,
+        "bytes_acked": 2600608,
+        "interval_sec": 0.2073
+      },
+      {
+        "t": 15.5068,
+        "goodput_bps": 114151136.19013011,
+        "bytes_acked": 2913376,
+        "interval_sec": 0.2042
+      },
+      {
+        "t": 15.7097,
+        "goodput_bps": 110456529.27712555,
+        "bytes_acked": 2800432,
+        "interval_sec": 0.2028
+      },
+      {
+        "t": 15.9141,
+        "goodput_bps": 117676319.99370769,
+        "bytes_acked": 3007496,
+        "interval_sec": 0.2045
+      },
+      {
+        "t": 16.1156,
+        "goodput_bps": 124571064.64261831,
+        "bytes_acked": 3137816,
+        "interval_sec": 0.2015
+      },
+      {
+        "t": 16.3159,
+        "goodput_bps": 114522818.6623656,
+        "bytes_acked": 2867040,
+        "interval_sec": 0.2003
+      },
+      {
+        "t": 16.5171,
+        "goodput_bps": 118743662.63494076,
+        "bytes_acked": 2985776,
+        "interval_sec": 0.2012
+      },
+      {
+        "t": 16.7204,
+        "goodput_bps": 133686441.89347494,
+        "bytes_acked": 3397008,
+        "interval_sec": 0.2033
+      },
+      {
+        "t": 16.9283,
+        "goodput_bps": 130887487.58010903,
+        "bytes_acked": 3401352,
+        "interval_sec": 0.2079
+      },
+      {
+        "t": 17.1308,
+        "goodput_bps": 111378954.20153432,
+        "bytes_acked": 2819256,
+        "interval_sec": 0.2025
+      },
+      {
+        "t": 17.3358,
+        "goodput_bps": 140037386.25780034,
+        "bytes_acked": 3589024,
+        "interval_sec": 0.205
+      },
+      {
+        "t": 17.5373,
+        "goodput_bps": 119302916.10427396,
+        "bytes_acked": 3005128,
+        "interval_sec": 0.2015
+      },
+      {
+        "t": 17.7706,
+        "goodput_bps": 108508457.96011561,
+        "bytes_acked": 3163880,
+        "interval_sec": 0.2333
+      },
+      {
+        "t": 17.978,
+        "goodput_bps": 89715776.22353733,
+        "bytes_acked": 2325960,
+        "interval_sec": 0.2074
+      },
+      {
+        "t": 18.1801,
+        "goodput_bps": 98176007.65954393,
+        "bytes_acked": 2480424,
+        "interval_sec": 0.2021
+      },
+      {
+        "t": 18.3852,
+        "goodput_bps": 95440159.92977694,
+        "bytes_acked": 2447120,
+        "interval_sec": 0.2051
+      },
+      {
+        "t": 18.586,
+        "goodput_bps": 103444905.44573648,
+        "bytes_acked": 2596264,
+        "interval_sec": 0.2008
+      },
+      {
+        "t": 18.7896,
+        "goodput_bps": 112281387.43159553,
+        "bytes_acked": 2856904,
+        "interval_sec": 0.2036
+      },
+      {
+        "t": 18.9972,
+        "goodput_bps": 89936304.5903135,
+        "bytes_acked": 2334568,
+        "interval_sec": 0.2077
+      },
+      {
+        "t": 19.2019,
+        "goodput_bps": 92115946.96034914,
+        "bytes_acked": 2357344,
+        "interval_sec": 0.2047
+      },
+      {
+        "t": 19.4134,
+        "goodput_bps": 93076280.38674676,
+        "bytes_acked": 2460152,
+        "interval_sec": 0.2115
+      },
+      {
+        "t": 19.6163,
+        "goodput_bps": 102436509.89101848,
+        "bytes_acked": 2597712,
+        "interval_sec": 0.2029
+      },
+      {
+        "t": 19.8268,
+        "goodput_bps": 108519024.3238252,
+        "bytes_acked": 2855456,
+        "interval_sec": 0.2105
+      },
+      {
+        "t": 20.0295,
+        "goodput_bps": 107761727.23917475,
+        "bytes_acked": 2730928,
+        "interval_sec": 0.2027
+      },
+      {
+        "t": 20.2333,
+        "goodput_bps": 118200745.7593821,
+        "bytes_acked": 3010392,
+        "interval_sec": 0.2037
+      },
+      {
+        "t": 20.4409,
+        "goodput_bps": 114814221.97731005,
+        "bytes_acked": 2979984,
+        "interval_sec": 0.2076
+      },
+      {
+        "t": 20.6454,
+        "goodput_bps": 117427389.45072478,
+        "bytes_acked": 3001704,
+        "interval_sec": 0.2045
+      },
+      {
+        "t": 20.8482,
+        "goodput_bps": 129590393.42551781,
+        "bytes_acked": 3285512,
+        "interval_sec": 0.2028
+      },
+      {
+        "t": 21.0541,
+        "goodput_bps": 128803228.4499891,
+        "bytes_acked": 3314472,
+        "interval_sec": 0.2059
+      },
+      {
+        "t": 21.2581,
+        "goodput_bps": 142671034.43211913,
+        "bytes_acked": 3638824,
+        "interval_sec": 0.204
+      },
+      {
+        "t": 21.4596,
+        "goodput_bps": 139603817.82125813,
+        "bytes_acked": 3515744,
+        "interval_sec": 0.2015
+      },
+      {
+        "t": 21.6613,
+        "goodput_bps": 153344821.4166555,
+        "bytes_acked": 3866160,
+        "interval_sec": 0.2017
+      },
+      {
+        "t": 21.8661,
+        "goodput_bps": 157820677.50735253,
+        "bytes_acked": 4039920,
+        "interval_sec": 0.2048
+      },
+      {
+        "t": 22.0735,
+        "goodput_bps": 104150575.5526332,
+        "bytes_acked": 2700472,
+        "interval_sec": 0.2074
+      },
+      {
+        "t": 22.2753,
+        "goodput_bps": 129180520.58480743,
+        "bytes_acked": 3258000,
+        "interval_sec": 0.2018
+      },
+      {
+        "t": 22.4864,
+        "goodput_bps": 113364226.82367107,
+        "bytes_acked": 2991568,
+        "interval_sec": 0.2111
+      },
+      {
+        "t": 22.6948,
+        "goodput_bps": 131475551.58462879,
+        "bytes_acked": 3425968,
+        "interval_sec": 0.2085
+      },
+      {
+        "t": 22.8988,
+        "goodput_bps": 131871060.48625281,
+        "bytes_acked": 3362256,
+        "interval_sec": 0.204
+      },
+      {
+        "t": 23.0996,
+        "goodput_bps": 129438307.96465181,
+        "bytes_acked": 3247864,
+        "interval_sec": 0.2007
+      },
+      {
+        "t": 23.3042,
+        "goodput_bps": 137741267.40816647,
+        "bytes_acked": 3522984,
+        "interval_sec": 0.2046
+      },
+      {
+        "t": 23.5073,
+        "goodput_bps": 133811373.3415679,
+        "bytes_acked": 3397008,
+        "interval_sec": 0.2031
+      },
+      {
+        "t": 23.7087,
+        "goodput_bps": 147006760.06441656,
+        "bytes_acked": 3702536,
+        "interval_sec": 0.2015
+      },
+      {
+        "t": 23.9105,
+        "goodput_bps": 142923141.12468034,
+        "bytes_acked": 3604072,
+        "interval_sec": 0.2017
+      },
+      {
+        "t": 24.1117,
+        "goodput_bps": 144581558.62595835,
+        "bytes_acked": 3635928,
+        "interval_sec": 0.2012
+      },
+      {
+        "t": 24.3202,
+        "goodput_bps": 145900229.96619144,
+        "bytes_acked": 3802448,
+        "interval_sec": 0.2085
+      },
+      {
+        "t": 24.5244,
+        "goodput_bps": 153447400.58923993,
+        "bytes_acked": 3916840,
+        "interval_sec": 0.2042
+      },
+      {
+        "t": 24.7257,
+        "goodput_bps": 160171558.52506164,
+        "bytes_acked": 4031232,
+        "interval_sec": 0.2013
+      },
+      {
+        "t": 24.9302,
+        "goodput_bps": 152327446.40567985,
+        "bytes_acked": 3893672,
+        "interval_sec": 0.2045
+      },
+      {
+        "t": 25.1337,
+        "goodput_bps": 169805706.14956987,
+        "bytes_acked": 4319384,
+        "interval_sec": 0.2035
+      },
+      {
+        "t": 25.363,
+        "goodput_bps": 163618161.57723364,
+        "bytes_acked": 4690072,
+        "interval_sec": 0.2293
+      },
+      {
+        "t": 25.5634,
+        "goodput_bps": 145029475.50235602,
+        "bytes_acked": 3631952,
+        "interval_sec": 0.2003
+      },
+      {
+        "t": 25.7676,
+        "goodput_bps": 144406688.86438456,
+        "bytes_acked": 3686608,
+        "interval_sec": 0.2042
+      },
+      {
+        "t": 25.9678,
+        "goodput_bps": 145124976.8239192,
+        "bytes_acked": 3631584,
+        "interval_sec": 0.2002
+      },
+      {
+        "t": 26.1736,
+        "goodput_bps": 140896623.16799068,
+        "bytes_acked": 3624344,
+        "interval_sec": 0.2058
+      },
+      {
+        "t": 26.3763,
+        "goodput_bps": 141787835.7134201,
+        "bytes_acked": 3592488,
+        "interval_sec": 0.2027
+      },
+      {
+        "t": 26.5773,
+        "goodput_bps": 118721286.83872303,
+        "bytes_acked": 2983832,
+        "interval_sec": 0.2011
+      },
+      {
+        "t": 26.7774,
+        "goodput_bps": 125567083.32438476,
+        "bytes_acked": 3140712,
+        "interval_sec": 0.2001
+      },
+      {
+        "t": 26.9786,
+        "goodput_bps": 114078529.5838625,
+        "bytes_acked": 2868488,
+        "interval_sec": 0.2012
+      },
+      {
+        "t": 27.185,
+        "goodput_bps": 126658846.89704825,
+        "bytes_acked": 3268136,
+        "interval_sec": 0.2064
+      },
+      {
+        "t": 27.3865,
+        "goodput_bps": 127969853.01256272,
+        "bytes_acked": 3223248,
+        "interval_sec": 0.2015
+      },
+      {
+        "t": 27.5903,
+        "goodput_bps": 143207873.43016213,
+        "bytes_acked": 3647512,
+        "interval_sec": 0.2038
+      },
+      {
+        "t": 27.7928,
+        "goodput_bps": 145532627.15544584,
+        "bytes_acked": 3683712,
+        "interval_sec": 0.2025
+      },
+      {
+        "t": 27.9973,
+        "goodput_bps": 146586158.45006377,
+        "bytes_acked": 3747424,
+        "interval_sec": 0.2045
+      },
+      {
+        "t": 28.2039,
+        "goodput_bps": 150942767.8665413,
+        "bytes_acked": 3898016,
+        "interval_sec": 0.2066
+      },
+      {
+        "t": 28.4092,
+        "goodput_bps": 134852603.76393884,
+        "bytes_acked": 3460256,
+        "interval_sec": 0.2053
+      },
+      {
+        "t": 28.6126,
+        "goodput_bps": 127784908.466745,
+        "bytes_acked": 3249312,
+        "interval_sec": 0.2034
+      },
+      {
+        "t": 28.8168,
+        "goodput_bps": 121406076.60264978,
+        "bytes_acked": 3098720,
+        "interval_sec": 0.2042
+      },
+      {
+        "t": 29.0212,
+        "goodput_bps": 138300773.7067733,
+        "bytes_acked": 3534568,
+        "interval_sec": 0.2045
+      },
+      {
+        "t": 29.225,
+        "goodput_bps": 136064371.7710124,
+        "bytes_acked": 3466512,
+        "interval_sec": 0.2038
+      },
+      {
+        "t": 29.4304,
+        "goodput_bps": 109597866.18723606,
+        "bytes_acked": 2813464,
+        "interval_sec": 0.2054
+      },
+      {
+        "t": 29.6345,
+        "goodput_bps": 104053931.50695994,
+        "bytes_acked": 2654664,
+        "interval_sec": 0.2041
+      },
+      {
+        "t": 29.8357,
+        "goodput_bps": 109519681.91550274,
+        "bytes_acked": 2754096,
+        "interval_sec": 0.2012
+      },
+      {
+        "t": 30.0028,
+        "goodput_bps": 118128714.7480357,
+        "bytes_acked": 2467392,
+        "interval_sec": 0.1671
+      }
+    ]
+  },
+  {
+    "server_label": "scaleway.testdebit.info:9226 (Vitry-sur-Seine, FR)",
+    "server_host": "scaleway.testdebit.info",
+    "server_port": 9226,
+    "bytes_sent": 173408256,
+    "duration": 30.32517787499819,
+    "bitrate_bps": 45746344.95858115,
+    "goodput_samples": [
+      {
+        "t": 0.4416,
+        "goodput_bps": 2124860.197924185,
+        "bytes_acked": 117288,
+        "interval_sec": 0.4416
+      },
+      {
+        "t": 0.6669,
+        "goodput_bps": 11770628.59613806,
+        "bytes_acked": 331552,
+        "interval_sec": 0.2253
+      },
+      {
+        "t": 0.9618,
+        "goodput_bps": 34374047.52162277,
+        "bytes_acked": 1267000,
+        "interval_sec": 0.2949
+      },
+      {
+        "t": 1.1643,
+        "goodput_bps": 30866709.797716465,
+        "bytes_acked": 781248,
+        "interval_sec": 0.2025
+      },
+      {
+        "t": 1.3796,
+        "goodput_bps": 38092026.38710883,
+        "bytes_acked": 1025184,
+        "interval_sec": 0.2153
+      },
+      {
+        "t": 1.5949,
+        "goodput_bps": 36852369.82823413,
+        "bytes_acked": 991880,
+        "interval_sec": 0.2153
+      },
+      {
+        "t": 1.817,
+        "goodput_bps": 37759025.296420835,
+        "bytes_acked": 1048352,
+        "interval_sec": 0.2221
+      },
+      {
+        "t": 2.0268,
+        "goodput_bps": 39645295.03359397,
+        "bytes_acked": 1039664,
+        "interval_sec": 0.2098
+      },
+      {
+        "t": 2.2507,
+        "goodput_bps": 41504595.92928009,
+        "bytes_acked": 1161296,
+        "interval_sec": 0.2238
+      },
+      {
+        "t": 2.4601,
+        "goodput_bps": 40097310.25555175,
+        "bytes_acked": 1049800,
+        "interval_sec": 0.2095
+      },
+      {
+        "t": 2.6834,
+        "goodput_bps": 41503411.82389082,
+        "bytes_acked": 1158400,
+        "interval_sec": 0.2233
+      },
+      {
+        "t": 2.916,
+        "goodput_bps": 40243515.305424735,
+        "bytes_acked": 1169984,
+        "interval_sec": 0.2326
+      },
+      {
+        "t": 3.1364,
+        "goodput_bps": 42776106.60799081,
+        "bytes_acked": 1178672,
+        "interval_sec": 0.2204
+      },
+      {
+        "t": 3.3543,
+        "goodput_bps": 43273082.71184744,
+        "bytes_acked": 1178672,
+        "interval_sec": 0.2179
+      },
+      {
+        "t": 3.573,
+        "goodput_bps": 42475423.579934746,
+        "bytes_acked": 1161296,
+        "interval_sec": 0.2187
+      },
+      {
+        "t": 3.7883,
+        "goodput_bps": 43435500.631611034,
+        "bytes_acked": 1168536,
+        "interval_sec": 0.2152
+      },
+      {
+        "t": 4.0153,
+        "goodput_bps": 41934739.89450268,
+        "bytes_acked": 1190256,
+        "interval_sec": 0.2271
+      },
+      {
+        "t": 4.2288,
+        "goodput_bps": 43799517.70992829,
+        "bytes_acked": 1168536,
+        "interval_sec": 0.2134
+      },
+      {
+        "t": 4.4423,
+        "goodput_bps": 43779236.39423002,
+        "bytes_acked": 1168536,
+        "interval_sec": 0.2135
+      },
+      {
+        "t": 4.6532,
+        "goodput_bps": 43884292.55600035,
+        "bytes_acked": 1156952,
+        "interval_sec": 0.2109
+      },
+      {
+        "t": 4.8686,
+        "goodput_bps": 44161387.83339642,
+        "bytes_acked": 1188808,
+        "interval_sec": 0.2154
+      },
+      {
+        "t": 5.0759,
+        "goodput_bps": 45371893.742606044,
+        "bytes_acked": 1175776,
+        "interval_sec": 0.2073
+      },
+      {
+        "t": 5.2785,
+        "goodput_bps": 42019475.47311906,
+        "bytes_acked": 1064280,
+        "interval_sec": 0.2026
+      },
+      {
+        "t": 5.4983,
+        "goodput_bps": 42527133.93215057,
+        "bytes_acked": 1168536,
+        "interval_sec": 0.2198
+      },
+      {
+        "t": 5.7121,
+        "goodput_bps": 44222919.43463053,
+        "bytes_acked": 1181568,
+        "interval_sec": 0.2137
+      },
+      {
+        "t": 5.927,
+        "goodput_bps": 43868742.576827526,
+        "bytes_acked": 1178672,
+        "interval_sec": 0.2149
+      },
+      {
+        "t": 6.1377,
+        "goodput_bps": 44800869.35753417,
+        "bytes_acked": 1180120,
+        "interval_sec": 0.2107
+      },
+      {
+        "t": 6.3499,
+        "goodput_bps": 44284340.87869729,
+        "bytes_acked": 1174328,
+        "interval_sec": 0.2121
+      },
+      {
+        "t": 6.565,
+        "goodput_bps": 43722325.68240991,
+        "bytes_acked": 1175776,
+        "interval_sec": 0.2151
+      },
+      {
+        "t": 6.7732,
+        "goodput_bps": 45077512.00401399,
+        "bytes_acked": 1172880,
+        "interval_sec": 0.2082
+      },
+      {
+        "t": 6.9861,
+        "goodput_bps": 44394745.29815196,
+        "bytes_acked": 1181568,
+        "interval_sec": 0.2129
+      },
+      {
+        "t": 7.2017,
+        "goodput_bps": 44101752.995280154,
+        "bytes_acked": 1188808,
+        "interval_sec": 0.2156
+      },
+      {
+        "t": 7.4135,
+        "goodput_bps": 44148019.75034263,
+        "bytes_acked": 1168536,
+        "interval_sec": 0.2117
+      },
+      {
+        "t": 7.7756,
+        "goodput_bps": 39094802.249103956,
+        "bytes_acked": 1769456,
+        "interval_sec": 0.3621
+      },
+      {
+        "t": 7.9882,
+        "goodput_bps": 30628218.94756218,
+        "bytes_acked": 813984,
+        "interval_sec": 0.2126
+      },
+      {
+        "t": 8.2036,
+        "goodput_bps": 32858171.377673432,
+        "bytes_acked": 884728,
+        "interval_sec": 0.2154
+      },
+      {
+        "t": 8.4226,
+        "goodput_bps": 32954523.899375252,
+        "bytes_acked": 902104,
+        "interval_sec": 0.219
+      },
+      {
+        "t": 8.6307,
+        "goodput_bps": 34233254.8102968,
+        "bytes_acked": 890520,
+        "interval_sec": 0.2081
+      },
+      {
+        "t": 8.8313,
+        "goodput_bps": 34709190.96674637,
+        "bytes_acked": 870248,
+        "interval_sec": 0.2006
+      },
+      {
+        "t": 9.0534,
+        "goodput_bps": 36920679.24441095,
+        "bytes_acked": 1025184,
+        "interval_sec": 0.2221
+      },
+      {
+        "t": 9.2779,
+        "goodput_bps": 36887413.726600714,
+        "bytes_acked": 1035320,
+        "interval_sec": 0.2245
+      },
+      {
+        "t": 9.5505,
+        "goodput_bps": 31403318.399248987,
+        "bytes_acked": 1070072,
+        "interval_sec": 0.2726
+      },
+      {
+        "t": 9.7514,
+        "goodput_bps": 26060837.910977885,
+        "bytes_acked": 654408,
+        "interval_sec": 0.2009
+      },
+      {
+        "t": 9.976,
+        "goodput_bps": 27344756.8218922,
+        "bytes_acked": 767440,
+        "interval_sec": 0.2245
+      },
+      {
+        "t": 10.1934,
+        "goodput_bps": 27807220.0051544,
+        "bytes_acked": 755856,
+        "interval_sec": 0.2175
+      },
+      {
+        "t": 10.4068,
+        "goodput_bps": 29532434.116387326,
+        "bytes_acked": 787712,
+        "interval_sec": 0.2134
+      },
+      {
+        "t": 10.6221,
+        "goodput_bps": 29156517.34172553,
+        "bytes_acked": 784816,
+        "interval_sec": 0.2153
+      },
+      {
+        "t": 10.8333,
+        "goodput_bps": 29242376.847675882,
+        "bytes_acked": 771784,
+        "interval_sec": 0.2111
+      },
+      {
+        "t": 11.0631,
+        "goodput_bps": 31649010.970884595,
+        "bytes_acked": 909344,
+        "interval_sec": 0.2299
+      },
+      {
+        "t": 11.271,
+        "goodput_bps": 29698206.588101152,
+        "bytes_acked": 771784,
+        "interval_sec": 0.2079
+      },
+      {
+        "t": 11.5021,
+        "goodput_bps": 31684374.841320887,
+        "bytes_acked": 915136,
+        "interval_sec": 0.2311
+      },
+      {
+        "t": 11.7267,
+        "goodput_bps": 31926776.775807537,
+        "bytes_acked": 896312,
+        "interval_sec": 0.2246
+      },
+      {
+        "t": 11.9351,
+        "goodput_bps": 31342302.127519272,
+        "bytes_acked": 816672,
+        "interval_sec": 0.2085
+      },
+      {
+        "t": 12.1553,
+        "goodput_bps": 32089213.29104354,
+        "bytes_acked": 883280,
+        "interval_sec": 0.2202
+      },
+      {
+        "t": 12.3556,
+        "goodput_bps": 31238682.414938748,
+        "bytes_acked": 781920,
+        "interval_sec": 0.2002
+      },
+      {
+        "t": 12.5838,
+        "goodput_bps": 31627121.084747788,
+        "bytes_acked": 902104,
+        "interval_sec": 0.2282
+      },
+      {
+        "t": 12.8099,
+        "goodput_bps": 32479079.158963807,
+        "bytes_acked": 918032,
+        "interval_sec": 0.2261
+      },
+      {
+        "t": 13.0348,
+        "goodput_bps": 32661508.96715512,
+        "bytes_acked": 918032,
+        "interval_sec": 0.2249
+      },
+      {
+        "t": 13.2574,
+        "goodput_bps": 32880558.97586878,
+        "bytes_acked": 915136,
+        "interval_sec": 0.2227
+      },
+      {
+        "t": 13.4871,
+        "goodput_bps": 31969140.471378326,
+        "bytes_acked": 918032,
+        "interval_sec": 0.2297
+      },
+      {
+        "t": 13.7244,
+        "goodput_bps": 30123406.73859999,
+        "bytes_acked": 893416,
+        "interval_sec": 0.2373
+      },
+      {
+        "t": 13.9563,
+        "goodput_bps": 31822031.413000043,
+        "bytes_acked": 922376,
+        "interval_sec": 0.2319
+      },
+      {
+        "t": 14.1772,
+        "goodput_bps": 33346461.14760011,
+        "bytes_acked": 920928,
+        "interval_sec": 0.2209
+      },
+      {
+        "t": 14.3781,
+        "goodput_bps": 31142904.962233722,
+        "bytes_acked": 781920,
+        "interval_sec": 0.2009
+      },
+      {
+        "t": 14.6086,
+        "goodput_bps": 32014415.618627444,
+        "bytes_acked": 922376,
+        "interval_sec": 0.2305
+      },
+      {
+        "t": 14.8306,
+        "goodput_bps": 33239885.3142417,
+        "bytes_acked": 922376,
+        "interval_sec": 0.222
+      },
+      {
+        "t": 15.0506,
+        "goodput_bps": 32909377.657866977,
+        "bytes_acked": 905000,
+        "interval_sec": 0.22
+      },
+      {
+        "t": 15.276,
+        "goodput_bps": 33349805.04421623,
+        "bytes_acked": 939752,
+        "interval_sec": 0.2254
+      },
+      {
+        "t": 15.4802,
+        "goodput_bps": 30748993.154364757,
+        "bytes_acked": 784816,
+        "interval_sec": 0.2042
+      },
+      {
+        "t": 15.6999,
+        "goodput_bps": 32578251.730106823,
+        "bytes_acked": 894864,
+        "interval_sec": 0.2197
+      },
+      {
+        "t": 15.9204,
+        "goodput_bps": 33468632.98495809,
+        "bytes_acked": 922376,
+        "interval_sec": 0.2205
+      },
+      {
+        "t": 16.1446,
+        "goodput_bps": 32654964.80179627,
+        "bytes_acked": 915136,
+        "interval_sec": 0.2242
+      },
+      {
+        "t": 16.3649,
+        "goodput_bps": 33651573.71318939,
+        "bytes_acked": 926720,
+        "interval_sec": 0.2203
+      },
+      {
+        "t": 16.5877,
+        "goodput_bps": 32608028.67863842,
+        "bytes_acked": 907896,
+        "interval_sec": 0.2227
+      },
+      {
+        "t": 16.8074,
+        "goodput_bps": 33470171.496686995,
+        "bytes_acked": 919480,
+        "interval_sec": 0.2198
+      },
+      {
+        "t": 17.0265,
+        "goodput_bps": 33637999.10930729,
+        "bytes_acked": 920928,
+        "interval_sec": 0.219
+      },
+      {
+        "t": 17.2441,
+        "goodput_bps": 33957797.387223534,
+        "bytes_acked": 923824,
+        "interval_sec": 0.2176
+      },
+      {
+        "t": 17.4612,
+        "goodput_bps": 33554700.01637014,
+        "bytes_acked": 910792,
+        "interval_sec": 0.2171
+      },
+      {
+        "t": 17.6793,
+        "goodput_bps": 33620925.45999723,
+        "bytes_acked": 916584,
+        "interval_sec": 0.2181
+      },
+      {
+        "t": 17.8842,
+        "goodput_bps": 34946310.997633986,
+        "bytes_acked": 894864,
+        "interval_sec": 0.2049
+      },
+      {
+        "t": 18.0998,
+        "goodput_bps": 34271533.77082913,
+        "bytes_acked": 923824,
+        "interval_sec": 0.2156
+      },
+      {
+        "t": 18.3126,
+        "goodput_bps": 33599639.89615514,
+        "bytes_acked": 893416,
+        "interval_sec": 0.2127
+      },
+      {
+        "t": 18.5256,
+        "goodput_bps": 34473540.533478454,
+        "bytes_acked": 918032,
+        "interval_sec": 0.213
+      },
+      {
+        "t": 18.7357,
+        "goodput_bps": 34962561.24007019,
+        "bytes_acked": 918032,
+        "interval_sec": 0.2101
+      },
+      {
+        "t": 18.9472,
+        "goodput_bps": 34066950.37873791,
+        "bytes_acked": 900656,
+        "interval_sec": 0.2115
+      },
+      {
+        "t": 19.1691,
+        "goodput_bps": 36695477.03412934,
+        "bytes_acked": 1017944,
+        "interval_sec": 0.2219
+      },
+      {
+        "t": 19.3944,
+        "goodput_bps": 36664655.72618746,
+        "bytes_acked": 1032424,
+        "interval_sec": 0.2253
+      },
+      {
+        "t": 19.6129,
+        "goodput_bps": 37800788.675222635,
+        "bytes_acked": 1032424,
+        "interval_sec": 0.2185
+      },
+      {
+        "t": 19.8273,
+        "goodput_bps": 38569997.554488786,
+        "bytes_acked": 1033872,
+        "interval_sec": 0.2144
+      },
+      {
+        "t": 20.0363,
+        "goodput_bps": 39128534.936213754,
+        "bytes_acked": 1022288,
+        "interval_sec": 0.209
+      },
+      {
+        "t": 20.2423,
+        "goodput_bps": 40428402.15612551,
+        "bytes_acked": 1041112,
+        "interval_sec": 0.206
+      },
+      {
+        "t": 20.4681,
+        "goodput_bps": 40578848.08412849,
+        "bytes_acked": 1145368,
+        "interval_sec": 0.2258
+      },
+      {
+        "t": 20.6986,
+        "goodput_bps": 40151003.354266636,
+        "bytes_acked": 1156952,
+        "interval_sec": 0.2305
+      },
+      {
+        "t": 20.9149,
+        "goodput_bps": 42695038.271332316,
+        "bytes_acked": 1154056,
+        "interval_sec": 0.2162
+      },
+      {
+        "t": 21.1289,
+        "goodput_bps": 43782771.68078369,
+        "bytes_acked": 1171432,
+        "interval_sec": 0.214
+      },
+      {
+        "t": 21.3406,
+        "goodput_bps": 45037615.98919258,
+        "bytes_acked": 1191704,
+        "interval_sec": 0.2117
+      },
+      {
+        "t": 21.542,
+        "goodput_bps": 46649392.80826286,
+        "bytes_acked": 1174328,
+        "interval_sec": 0.2014
+      },
+      {
+        "t": 21.7617,
+        "goodput_bps": 47656734.70537188,
+        "bytes_acked": 1308992,
+        "interval_sec": 0.2197
+      },
+      {
+        "t": 21.964,
+        "goodput_bps": 50559138.537351705,
+        "bytes_acked": 1278584,
+        "interval_sec": 0.2023
+      },
+      {
+        "t": 22.1687,
+        "goodput_bps": 49411402.37140865,
+        "bytes_acked": 1264104,
+        "interval_sec": 0.2047
+      },
+      {
+        "t": 22.3728,
+        "goodput_bps": 49844766.822011925,
+        "bytes_acked": 1271344,
+        "interval_sec": 0.204
+      },
+      {
+        "t": 22.5744,
+        "goodput_bps": 50549355.91835564,
+        "bytes_acked": 1274240,
+        "interval_sec": 0.2017
+      },
+      {
+        "t": 22.7944,
+        "goodput_bps": 54931809.88788678,
+        "bytes_acked": 1510264,
+        "interval_sec": 0.2199
+      },
+      {
+        "t": 23.0089,
+        "goodput_bps": 56654511.30006453,
+        "bytes_acked": 1518952,
+        "interval_sec": 0.2145
+      },
+      {
+        "t": 23.2159,
+        "goodput_bps": 59140507.31111454,
+        "bytes_acked": 1530536,
+        "interval_sec": 0.207
+      },
+      {
+        "t": 23.4319,
+        "goodput_bps": 60661535.340072595,
+        "bytes_acked": 1637688,
+        "interval_sec": 0.216
+      },
+      {
+        "t": 23.6389,
+        "goodput_bps": 63381720.03034094,
+        "bytes_acked": 1640584,
+        "interval_sec": 0.2071
+      },
+      {
+        "t": 23.84,
+        "goodput_bps": 65740391.37141374,
+        "bytes_acked": 1652168,
+        "interval_sec": 0.2011
+      },
+      {
+        "t": 24.0436,
+        "goodput_bps": 64816537.994122915,
+        "bytes_acked": 1649272,
+        "interval_sec": 0.2036
+      },
+      {
+        "t": 24.2537,
+        "goodput_bps": 67410793.10927936,
+        "bytes_acked": 1770904,
+        "interval_sec": 0.2102
+      },
+      {
+        "t": 24.4657,
+        "goodput_bps": 71589677.60505988,
+        "bytes_acked": 1896880,
+        "interval_sec": 0.212
+      },
+      {
+        "t": 24.6715,
+        "goodput_bps": 73622199.5806722,
+        "bytes_acked": 1893984,
+        "interval_sec": 0.2058
+      },
+      {
+        "t": 24.8786,
+        "goodput_bps": 77627309.31900236,
+        "bytes_acked": 2009824,
+        "interval_sec": 0.2071
+      },
+      {
+        "t": 25.0806,
+        "goodput_bps": 80305241.52744679,
+        "bytes_acked": 2027200,
+        "interval_sec": 0.2019
+      },
+      {
+        "t": 25.2853,
+        "goodput_bps": 79179458.14448947,
+        "bytes_acked": 2025752,
+        "interval_sec": 0.2047
+      },
+      {
+        "t": 25.4886,
+        "goodput_bps": 84063915.63870674,
+        "bytes_acked": 2137248,
+        "interval_sec": 0.2034
+      },
+      {
+        "t": 25.7052,
+        "goodput_bps": 84900852.37653384,
+        "bytes_acked": 2297976,
+        "interval_sec": 0.2165
+      },
+      {
+        "t": 25.9458,
+        "goodput_bps": 75910888.8558384,
+        "bytes_acked": 2283496,
+        "interval_sec": 0.2407
+      },
+      {
+        "t": 26.1551,
+        "goodput_bps": 61690439.389058426,
+        "bytes_acked": 1614024,
+        "interval_sec": 0.2093
+      },
+      {
+        "t": 26.3611,
+        "goodput_bps": 64976054.977157295,
+        "bytes_acked": 1672440,
+        "interval_sec": 0.2059
+      },
+      {
+        "t": 26.5663,
+        "goodput_bps": 69768737.49608567,
+        "bytes_acked": 1789728,
+        "interval_sec": 0.2052
+      },
+      {
+        "t": 26.7802,
+        "goodput_bps": 71411593.67208402,
+        "bytes_acked": 1909912,
+        "interval_sec": 0.214
+      },
+      {
+        "t": 26.9872,
+        "goodput_bps": 73704677.0337083,
+        "bytes_acked": 1907016,
+        "interval_sec": 0.207
+      },
+      {
+        "t": 27.1918,
+        "goodput_bps": 70661995.88509518,
+        "bytes_acked": 1807104,
+        "interval_sec": 0.2046
+      },
+      {
+        "t": 27.4003,
+        "goodput_bps": 73513456.22686644,
+        "bytes_acked": 1915704,
+        "interval_sec": 0.2085
+      },
+      {
+        "t": 27.6016,
+        "goodput_bps": 73185846.35692903,
+        "bytes_acked": 1841856,
+        "interval_sec": 0.2013
+      },
+      {
+        "t": 27.8117,
+        "goodput_bps": 77710125.8560552,
+        "bytes_acked": 2040232,
+        "interval_sec": 0.21
+      },
+      {
+        "t": 28.0227,
+        "goodput_bps": 78059610.63457355,
+        "bytes_acked": 2059056,
+        "interval_sec": 0.211
+      },
+      {
+        "t": 28.239,
+        "goodput_bps": 80842774.70825064,
+        "bytes_acked": 2186480,
+        "interval_sec": 0.2164
+      },
+      {
+        "t": 28.4426,
+        "goodput_bps": 82297033.95999429,
+        "bytes_acked": 2093808,
+        "interval_sec": 0.2035
+      },
+      {
+        "t": 28.648,
+        "goodput_bps": 80250259.98615648,
+        "bytes_acked": 2060504,
+        "interval_sec": 0.2054
+      },
+      {
+        "t": 28.8496,
+        "goodput_bps": 81548747.20331277,
+        "bytes_acked": 2054712,
+        "interval_sec": 0.2016
+      },
+      {
+        "t": 29.0563,
+        "goodput_bps": 81171458.76829277,
+        "bytes_acked": 2098152,
+        "interval_sec": 0.2068
+      },
+      {
+        "t": 29.2582,
+        "goodput_bps": 86924287.07793677,
+        "bytes_acked": 2193720,
+        "interval_sec": 0.2019
+      },
+      {
+        "t": 29.4639,
+        "goodput_bps": 85732441.24911486,
+        "bytes_acked": 2203856,
+        "interval_sec": 0.2056
+      },
+      {
+        "t": 29.6654,
+        "goodput_bps": 87950059.05741908,
+        "bytes_acked": 2215440,
+        "interval_sec": 0.2015
+      },
+      {
+        "t": 29.8718,
+        "goodput_bps": 85798972.77257712,
+        "bytes_acked": 2213992,
+        "interval_sec": 0.2064
+      },
+      {
+        "t": 30.0071,
+        "goodput_bps": 85367210.20907673,
+        "bytes_acked": 1443656,
+        "interval_sec": 0.1353
+      }
+    ]
+  },
+  {
+    "server_label": "speedtest.phx1.us.leaseweb.net:5206 (Phoenix, US)",
+    "server_host": "speedtest.phx1.us.leaseweb.net",
+    "server_port": 5206,
+    "bytes_sent": 236978176,
+    "duration": 30.103442291961983,
+    "bitrate_bps": 62977030.65360769,
+    "goodput_samples": [
+      {
+        "t": 0.2217,
+        "goodput_bps": 4858735.322034469,
+        "bytes_acked": 134664,
+        "interval_sec": 0.2217
+      },
+      {
+        "t": 0.4982,
+        "goodput_bps": 55608119.66949868,
+        "bytes_acked": 1921496,
+        "interval_sec": 0.2764
+      },
+      {
+        "t": 0.7035,
+        "goodput_bps": 56813647.11857297,
+        "bytes_acked": 1458256,
+        "interval_sec": 0.2053
+      },
+      {
+        "t": 0.9189,
+        "goodput_bps": 57528319.041267216,
+        "bytes_acked": 1548864,
+        "interval_sec": 0.2154
+      },
+      {
+        "t": 1.1309,
+        "goodput_bps": 59066705.49693651,
+        "bytes_acked": 1565288,
+        "interval_sec": 0.212
+      },
+      {
+        "t": 1.3344,
+        "goodput_bps": 60560584.95389109,
+        "bytes_acked": 1540672,
+        "interval_sec": 0.2035
+      },
+      {
+        "t": 1.5351,
+        "goodput_bps": 61933367.332538456,
+        "bytes_acked": 1553704,
+        "interval_sec": 0.2007
+      },
+      {
+        "t": 1.7456,
+        "goodput_bps": 59335666.43924975,
+        "bytes_acked": 1560944,
+        "interval_sec": 0.2105
+      },
+      {
+        "t": 1.953,
+        "goodput_bps": 65323124.7215484,
+        "bytes_acked": 1694160,
+        "interval_sec": 0.2075
+      },
+      {
+        "t": 2.1531,
+        "goodput_bps": 63336506.48526654,
+        "bytes_acked": 1584112,
+        "interval_sec": 0.2001
+      },
+      {
+        "t": 2.3633,
+        "goodput_bps": 64554704.90258943,
+        "bytes_acked": 1695608,
+        "interval_sec": 0.2101
+      },
+      {
+        "t": 2.5643,
+        "goodput_bps": 67119597.85233605,
+        "bytes_acked": 1686920,
+        "interval_sec": 0.2011
+      },
+      {
+        "t": 2.7759,
+        "goodput_bps": 64265195.93923531,
+        "bytes_acked": 1699952,
+        "interval_sec": 0.2116
+      },
+      {
+        "t": 2.9764,
+        "goodput_bps": 68249872.49243031,
+        "bytes_acked": 1710088,
+        "interval_sec": 0.2005
+      },
+      {
+        "t": 3.1785,
+        "goodput_bps": 65686935.6148745,
+        "bytes_acked": 1659408,
+        "interval_sec": 0.2021
+      },
+      {
+        "t": 3.3805,
+        "goodput_bps": 67049882.52522669,
+        "bytes_acked": 1692712,
+        "interval_sec": 0.202
+      },
+      {
+        "t": 3.5863,
+        "goodput_bps": 66227537.25602637,
+        "bytes_acked": 1704296,
+        "interval_sec": 0.2059
+      },
+      {
+        "t": 3.8027,
+        "goodput_bps": 67895105.53538549,
+        "bytes_acked": 1836064,
+        "interval_sec": 0.2163
+      },
+      {
+        "t": 4.0032,
+        "goodput_bps": 67920629.43954958,
+        "bytes_acked": 1702848,
+        "interval_sec": 0.2006
+      },
+      {
+        "t": 4.2051,
+        "goodput_bps": 68358295.33819236,
+        "bytes_acked": 1724568,
+        "interval_sec": 0.2018
+      },
+      {
+        "t": 4.4143,
+        "goodput_bps": 64933275.953950755,
+        "bytes_acked": 1698504,
+        "interval_sec": 0.2093
+      },
+      {
+        "t": 4.6347,
+        "goodput_bps": 66244269.349708036,
+        "bytes_acked": 1824480,
+        "interval_sec": 0.2203
+      },
+      {
+        "t": 4.8464,
+        "goodput_bps": 69045125.96032889,
+        "bytes_acked": 1827376,
+        "interval_sec": 0.2117
+      },
+      {
+        "t": 5.0539,
+        "goodput_bps": 65812301.3454093,
+        "bytes_acked": 1707192,
+        "interval_sec": 0.2075
+      },
+      {
+        "t": 5.2692,
+        "goodput_bps": 68129450.5293391,
+        "bytes_acked": 1833168,
+        "interval_sec": 0.2153
+      },
+      {
+        "t": 5.4784,
+        "goodput_bps": 69967660.32656795,
+        "bytes_acked": 1830272,
+        "interval_sec": 0.2093
+      },
+      {
+        "t": 5.6886,
+        "goodput_bps": 65001618.092103936,
+        "bytes_acked": 1707192,
+        "interval_sec": 0.2101
+      },
+      {
+        "t": 5.8978,
+        "goodput_bps": 71469280.43875915,
+        "bytes_acked": 1869368,
+        "interval_sec": 0.2092
+      },
+      {
+        "t": 6.0996,
+        "goodput_bps": 69981166.50305435,
+        "bytes_acked": 1765112,
+        "interval_sec": 0.2018
+      },
+      {
+        "t": 6.3138,
+        "goodput_bps": 68129977.96415661,
+        "bytes_acked": 1824480,
+        "interval_sec": 0.2142
+      },
+      {
+        "t": 6.5344,
+        "goodput_bps": 72325208.4683472,
+        "bytes_acked": 1993896,
+        "interval_sec": 0.2205
+      },
+      {
+        "t": 6.7346,
+        "goodput_bps": 61315081.39998334,
+        "bytes_acked": 1534880,
+        "interval_sec": 0.2003
+      },
+      {
+        "t": 6.9452,
+        "goodput_bps": 51355903.17313281,
+        "bytes_acked": 1351808,
+        "interval_sec": 0.2106
+      },
+      {
+        "t": 7.1509,
+        "goodput_bps": 54844576.568403155,
+        "bytes_acked": 1410352,
+        "interval_sec": 0.2057
+      },
+      {
+        "t": 7.3681,
+        "goodput_bps": 56650943.91825751,
+        "bytes_acked": 1537776,
+        "interval_sec": 0.2172
+      },
+      {
+        "t": 7.5873,
+        "goodput_bps": 56532606.632377684,
+        "bytes_acked": 1549360,
+        "interval_sec": 0.2193
+      },
+      {
+        "t": 7.7951,
+        "goodput_bps": 59891726.2364941,
+        "bytes_acked": 1555152,
+        "interval_sec": 0.2077
+      },
+      {
+        "t": 8.012,
+        "goodput_bps": 62110548.490235195,
+        "bytes_acked": 1684024,
+        "interval_sec": 0.2169
+      },
+      {
+        "t": 8.2249,
+        "goodput_bps": 63970973.02017431,
+        "bytes_acked": 1702848,
+        "interval_sec": 0.213
+      },
+      {
+        "t": 8.4347,
+        "goodput_bps": 63961130.10416718,
+        "bytes_acked": 1676784,
+        "interval_sec": 0.2097
+      },
+      {
+        "t": 8.6407,
+        "goodput_bps": 65151985.331925035,
+        "bytes_acked": 1678232,
+        "interval_sec": 0.2061
+      },
+      {
+        "t": 8.8429,
+        "goodput_bps": 67036456.798891775,
+        "bytes_acked": 1694160,
+        "interval_sec": 0.2022
+      },
+      {
+        "t": 9.0491,
+        "goodput_bps": 66359736.65725656,
+        "bytes_acked": 1710088,
+        "interval_sec": 0.2062
+      },
+      {
+        "t": 9.2622,
+        "goodput_bps": 67824991.97989996,
+        "bytes_acked": 1807104,
+        "interval_sec": 0.2131
+      },
+      {
+        "t": 9.4731,
+        "goodput_bps": 69086460.55526158,
+        "bytes_acked": 1821584,
+        "interval_sec": 0.2109
+      },
+      {
+        "t": 9.6818,
+        "goodput_bps": 64632905.74240673,
+        "bytes_acked": 1685472,
+        "interval_sec": 0.2086
+      },
+      {
+        "t": 9.8896,
+        "goodput_bps": 70550696.83431046,
+        "bytes_acked": 1833168,
+        "interval_sec": 0.2079
+      },
+      {
+        "t": 10.0949,
+        "goodput_bps": 65979996.75207363,
+        "bytes_acked": 1692712,
+        "interval_sec": 0.2052
+      },
+      {
+        "t": 10.2964,
+        "goodput_bps": 67704290.05400763,
+        "bytes_acked": 1705744,
+        "interval_sec": 0.2016
+      },
+      {
+        "t": 10.5137,
+        "goodput_bps": 67976462.04636563,
+        "bytes_acked": 1846200,
+        "interval_sec": 0.2173
+      },
+      {
+        "t": 10.7201,
+        "goodput_bps": 69718178.62741666,
+        "bytes_acked": 1798416,
+        "interval_sec": 0.2064
+      },
+      {
+        "t": 10.9314,
+        "goodput_bps": 69437330.21839435,
+        "bytes_acked": 1834616,
+        "interval_sec": 0.2114
+      },
+      {
+        "t": 11.1382,
+        "goodput_bps": 70309704.35795225,
+        "bytes_acked": 1817240,
+        "interval_sec": 0.2068
+      },
+      {
+        "t": 11.3518,
+        "goodput_bps": 50754813.87138868,
+        "bytes_acked": 1355328,
+        "interval_sec": 0.2136
+      },
+      {
+        "t": 11.5742,
+        "goodput_bps": 51470032.49759164,
+        "bytes_acked": 1430416,
+        "interval_sec": 0.2223
+      },
+      {
+        "t": 11.7764,
+        "goodput_bps": 56410761.560605355,
+        "bytes_acked": 1426280,
+        "interval_sec": 0.2023
+      },
+      {
+        "t": 11.9864,
+        "goodput_bps": 54292197.82755373,
+        "bytes_acked": 1424832,
+        "interval_sec": 0.21
+      },
+      {
+        "t": 12.1899,
+        "goodput_bps": 56410975.68065362,
+        "bytes_acked": 1434968,
+        "interval_sec": 0.2035
+      },
+      {
+        "t": 12.3969,
+        "goodput_bps": 55406010.459116064,
+        "bytes_acked": 1433520,
+        "interval_sec": 0.207
+      },
+      {
+        "t": 12.6151,
+        "goodput_bps": 55731850.280677795,
+        "bytes_acked": 1520400,
+        "interval_sec": 0.2182
+      },
+      {
+        "t": 12.8285,
+        "goodput_bps": 58572219.82530716,
+        "bytes_acked": 1562392,
+        "interval_sec": 0.2134
+      },
+      {
+        "t": 13.0354,
+        "goodput_bps": 61029839.01621952,
+        "bytes_acked": 1578320,
+        "interval_sec": 0.2069
+      },
+      {
+        "t": 13.2633,
+        "goodput_bps": 56173105.378711045,
+        "bytes_acked": 1600040,
+        "interval_sec": 0.2279
+      },
+      {
+        "t": 13.4683,
+        "goodput_bps": 59825173.89290753,
+        "bytes_acked": 1533432,
+        "interval_sec": 0.2051
+      },
+      {
+        "t": 13.6847,
+        "goodput_bps": 57646842.014592566,
+        "bytes_acked": 1559496,
+        "interval_sec": 0.2164
+      },
+      {
+        "t": 13.8872,
+        "goodput_bps": 62147913.116478935,
+        "bytes_acked": 1572528,
+        "interval_sec": 0.2024
+      },
+      {
+        "t": 14.0992,
+        "goodput_bps": 59653333.58392358,
+        "bytes_acked": 1581216,
+        "interval_sec": 0.2121
+      },
+      {
+        "t": 14.3005,
+        "goodput_bps": 61978580.41426183,
+        "bytes_acked": 1559496,
+        "interval_sec": 0.2013
+      },
+      {
+        "t": 14.5026,
+        "goodput_bps": 61897512.087103516,
+        "bytes_acked": 1563840,
+        "interval_sec": 0.2021
+      },
+      {
+        "t": 14.7108,
+        "goodput_bps": 60699960.52652783,
+        "bytes_acked": 1579768,
+        "interval_sec": 0.2082
+      },
+      {
+        "t": 14.9199,
+        "goodput_bps": 61077239.062594645,
+        "bytes_acked": 1595696,
+        "interval_sec": 0.209
+      },
+      {
+        "t": 15.1418,
+        "goodput_bps": 61270766.982253484,
+        "bytes_acked": 1699952,
+        "interval_sec": 0.222
+      },
+      {
+        "t": 15.3592,
+        "goodput_bps": 61911241.38142458,
+        "bytes_acked": 1682576,
+        "interval_sec": 0.2174
+      },
+      {
+        "t": 15.5596,
+        "goodput_bps": 63122592.0933018,
+        "bytes_acked": 1581216,
+        "interval_sec": 0.2004
+      },
+      {
+        "t": 15.7613,
+        "goodput_bps": 61872971.65464411,
+        "bytes_acked": 1559496,
+        "interval_sec": 0.2016
+      },
+      {
+        "t": 15.9688,
+        "goodput_bps": 61221540.380648546,
+        "bytes_acked": 1588456,
+        "interval_sec": 0.2076
+      },
+      {
+        "t": 16.1846,
+        "goodput_bps": 62811004.3220465,
+        "bytes_acked": 1694160,
+        "interval_sec": 0.2158
+      },
+      {
+        "t": 16.3854,
+        "goodput_bps": 62481546.97215804,
+        "bytes_acked": 1568184,
+        "interval_sec": 0.2008
+      },
+      {
+        "t": 16.5985,
+        "goodput_bps": 58600272.5378469,
+        "bytes_acked": 1560944,
+        "interval_sec": 0.2131
+      },
+      {
+        "t": 16.8045,
+        "goodput_bps": 50192104.77849635,
+        "bytes_acked": 1292568,
+        "interval_sec": 0.206
+      },
+      {
+        "t": 17.0166,
+        "goodput_bps": 48013297.297937386,
+        "bytes_acked": 1272792,
+        "interval_sec": 0.2121
+      },
+      {
+        "t": 17.238,
+        "goodput_bps": 51322804.9687065,
+        "bytes_acked": 1420488,
+        "interval_sec": 0.2214
+      },
+      {
+        "t": 17.4591,
+        "goodput_bps": 51193987.944893,
+        "bytes_acked": 1414696,
+        "interval_sec": 0.2211
+      },
+      {
+        "t": 17.6704,
+        "goodput_bps": 54001797.35899944,
+        "bytes_acked": 1426280,
+        "interval_sec": 0.2113
+      },
+      {
+        "t": 17.8805,
+        "goodput_bps": 53420744.707661554,
+        "bytes_acked": 1403112,
+        "interval_sec": 0.2101
+      },
+      {
+        "t": 18.0867,
+        "goodput_bps": 55451834.103512935,
+        "bytes_acked": 1429176,
+        "interval_sec": 0.2062
+      },
+      {
+        "t": 18.2868,
+        "goodput_bps": 57416615.715407476,
+        "bytes_acked": 1436416,
+        "interval_sec": 0.2001
+      },
+      {
+        "t": 18.4923,
+        "goodput_bps": 55406127.88685518,
+        "bytes_acked": 1423384,
+        "interval_sec": 0.2055
+      },
+      {
+        "t": 18.7051,
+        "goodput_bps": 59072804.41547566,
+        "bytes_acked": 1571080,
+        "interval_sec": 0.2128
+      },
+      {
+        "t": 18.9197,
+        "goodput_bps": 58616759.79150629,
+        "bytes_acked": 1572528,
+        "interval_sec": 0.2146
+      },
+      {
+        "t": 19.1257,
+        "goodput_bps": 60290871.571053855,
+        "bytes_acked": 1552256,
+        "interval_sec": 0.206
+      },
+      {
+        "t": 19.3289,
+        "goodput_bps": 61686339.59652979,
+        "bytes_acked": 1566736,
+        "interval_sec": 0.2032
+      },
+      {
+        "t": 19.5296,
+        "goodput_bps": 61752848.98261455,
+        "bytes_acked": 1549360,
+        "interval_sec": 0.2007
+      },
+      {
+        "t": 19.7547,
+        "goodput_bps": 60681022.80374816,
+        "bytes_acked": 1707192,
+        "interval_sec": 0.2251
+      },
+      {
+        "t": 19.97,
+        "goodput_bps": 63312010.113162056,
+        "bytes_acked": 1704296,
+        "interval_sec": 0.2154
+      },
+      {
+        "t": 20.1854,
+        "goodput_bps": 58144384.082315676,
+        "bytes_acked": 1565288,
+        "interval_sec": 0.2154
+      },
+      {
+        "t": 20.3878,
+        "goodput_bps": 66618513.86078522,
+        "bytes_acked": 1685472,
+        "interval_sec": 0.2024
+      },
+      {
+        "t": 20.5998,
+        "goodput_bps": 59884940.45105131,
+        "bytes_acked": 1587008,
+        "interval_sec": 0.212
+      },
+      {
+        "t": 20.8104,
+        "goodput_bps": 59579502.02288498,
+        "bytes_acked": 1568184,
+        "interval_sec": 0.2106
+      },
+      {
+        "t": 21.0111,
+        "goodput_bps": 62658709.129652016,
+        "bytes_acked": 1572528,
+        "interval_sec": 0.2008
+      },
+      {
+        "t": 21.2353,
+        "goodput_bps": 61029049.21447189,
+        "bytes_acked": 1710088,
+        "interval_sec": 0.2242
+      },
+      {
+        "t": 21.4463,
+        "goodput_bps": 64071320.27104553,
+        "bytes_acked": 1689816,
+        "interval_sec": 0.211
+      },
+      {
+        "t": 21.657,
+        "goodput_bps": 64651367.93860206,
+        "bytes_acked": 1702848,
+        "interval_sec": 0.2107
+      },
+      {
+        "t": 21.8662,
+        "goodput_bps": 64749947.11337803,
+        "bytes_acked": 1692712,
+        "interval_sec": 0.2091
+      },
+      {
+        "t": 22.0755,
+        "goodput_bps": 64968607.17426041,
+        "bytes_acked": 1699952,
+        "interval_sec": 0.2093
+      },
+      {
+        "t": 22.287,
+        "goodput_bps": 64636527.23340381,
+        "bytes_acked": 1708640,
+        "interval_sec": 0.2115
+      },
+      {
+        "t": 22.4941,
+        "goodput_bps": 65831688.08251784,
+        "bytes_acked": 1704296,
+        "interval_sec": 0.2071
+      },
+      {
+        "t": 22.7009,
+        "goodput_bps": 61229107.50930646,
+        "bytes_acked": 1582664,
+        "interval_sec": 0.2068
+      },
+      {
+        "t": 22.9049,
+        "goodput_bps": 66423306.77524679,
+        "bytes_acked": 1694160,
+        "interval_sec": 0.204
+      },
+      {
+        "t": 23.109,
+        "goodput_bps": 61413257.30305227,
+        "bytes_acked": 1566736,
+        "interval_sec": 0.2041
+      },
+      {
+        "t": 23.3101,
+        "goodput_bps": 57600891.0611053,
+        "bytes_acked": 1448000,
+        "interval_sec": 0.2011
+      },
+      {
+        "t": 23.5124,
+        "goodput_bps": 67747657.95830107,
+        "bytes_acked": 1712984,
+        "interval_sec": 0.2023
+      },
+      {
+        "t": 23.7135,
+        "goodput_bps": 62487153.21530383,
+        "bytes_acked": 1571080,
+        "interval_sec": 0.2011
+      },
+      {
+        "t": 23.9322,
+        "goodput_bps": 61031589.06681212,
+        "bytes_acked": 1668096,
+        "interval_sec": 0.2187
+      },
+      {
+        "t": 24.1341,
+        "goodput_bps": 67394481.03710295,
+        "bytes_acked": 1701400,
+        "interval_sec": 0.202
+      },
+      {
+        "t": 24.3404,
+        "goodput_bps": 66254885.68643359,
+        "bytes_acked": 1708640,
+        "interval_sec": 0.2063
+      },
+      {
+        "t": 24.5581,
+        "goodput_bps": 67225054.67358188,
+        "bytes_acked": 1828824,
+        "interval_sec": 0.2176
+      },
+      {
+        "t": 24.761,
+        "goodput_bps": 67145913.62555708,
+        "bytes_acked": 1702848,
+        "interval_sec": 0.2029
+      },
+      {
+        "t": 24.9718,
+        "goodput_bps": 69050065.8726516,
+        "bytes_acked": 1820136,
+        "interval_sec": 0.2109
+      },
+      {
+        "t": 25.1804,
+        "goodput_bps": 69829398.30569987,
+        "bytes_acked": 1820136,
+        "interval_sec": 0.2085
+      },
+      {
+        "t": 25.3935,
+        "goodput_bps": 69069962.41261935,
+        "bytes_acked": 1840408,
+        "interval_sec": 0.2132
+      },
+      {
+        "t": 25.5996,
+        "goodput_bps": 69823094.89398518,
+        "bytes_acked": 1798416,
+        "interval_sec": 0.2061
+      },
+      {
+        "t": 25.8061,
+        "goodput_bps": 71294611.008996,
+        "bytes_acked": 1840408,
+        "interval_sec": 0.2065
+      },
+      {
+        "t": 26.0234,
+        "goodput_bps": 66588934.87079185,
+        "bytes_acked": 1808552,
+        "interval_sec": 0.2173
+      },
+      {
+        "t": 26.2304,
+        "goodput_bps": 76275001.24172235,
+        "bytes_acked": 1973624,
+        "interval_sec": 0.207
+      },
+      {
+        "t": 26.4386,
+        "goodput_bps": 69211353.93701303,
+        "bytes_acked": 1801312,
+        "interval_sec": 0.2082
+      },
+      {
+        "t": 26.6493,
+        "goodput_bps": 74200096.75555544,
+        "bytes_acked": 1954800,
+        "interval_sec": 0.2108
+      },
+      {
+        "t": 26.8577,
+        "goodput_bps": 75235643.46467869,
+        "bytes_acked": 1959144,
+        "interval_sec": 0.2083
+      },
+      {
+        "t": 27.0723,
+        "goodput_bps": 77869689.70904714,
+        "bytes_acked": 2089464,
+        "interval_sec": 0.2147
+      },
+      {
+        "t": 27.2821,
+        "goodput_bps": 78025249.12578242,
+        "bytes_acked": 2046024,
+        "interval_sec": 0.2098
+      },
+      {
+        "t": 27.4861,
+        "goodput_bps": 77066183.09599106,
+        "bytes_acked": 1964936,
+        "interval_sec": 0.204
+      },
+      {
+        "t": 27.7034,
+        "goodput_bps": 64175907.15955295,
+        "bytes_acked": 1743392,
+        "interval_sec": 0.2173
+      },
+      {
+        "t": 27.9042,
+        "goodput_bps": 57948861.926804334,
+        "bytes_acked": 1454744,
+        "interval_sec": 0.2008
+      },
+      {
+        "t": 28.1162,
+        "goodput_bps": 58316943.532249846,
+        "bytes_acked": 1545016,
+        "interval_sec": 0.2119
+      },
+      {
+        "t": 28.3168,
+        "goodput_bps": 61320805.08092911,
+        "bytes_acked": 1537776,
+        "interval_sec": 0.2006
+      },
+      {
+        "t": 28.5256,
+        "goodput_bps": 64514731.34990412,
+        "bytes_acked": 1684024,
+        "interval_sec": 0.2088
+      },
+      {
+        "t": 28.73,
+        "goodput_bps": 65807983.2261944,
+        "bytes_acked": 1681128,
+        "interval_sec": 0.2044
+      },
+      {
+        "t": 28.9485,
+        "goodput_bps": 61871770.09573224,
+        "bytes_acked": 1689816,
+        "interval_sec": 0.2185
+      },
+      {
+        "t": 29.1515,
+        "goodput_bps": 70525449.18613832,
+        "bytes_acked": 1789728,
+        "interval_sec": 0.203
+      },
+      {
+        "t": 29.3623,
+        "goodput_bps": 69588842.32994859,
+        "bytes_acked": 1833168,
+        "interval_sec": 0.2107
+      },
+      {
+        "t": 29.5641,
+        "goodput_bps": 71974983.10483007,
+        "bytes_acked": 1815792,
+        "interval_sec": 0.2018
+      },
+      {
+        "t": 29.7688,
+        "goodput_bps": 70972563.25390103,
+        "bytes_acked": 1815792,
+        "interval_sec": 0.2047
+      },
+      {
+        "t": 29.9776,
+        "goodput_bps": 70843169.01014028,
+        "bytes_acked": 1849096,
+        "interval_sec": 0.2088
+      },
+      {
+        "t": 30.0005,
+        "goodput_bps": 89466698.57507697,
+        "bytes_acked": 256296,
+        "interval_sec": 0.0229
+      }
+    ]
+  },
+  {
+    "server_label": "143.244.63.144:5201 (Sydney, AU)",
+    "server_host": "143.244.63.144",
+    "server_port": 5201,
+    "bytes_sent": 46530560,
+    "duration": 30.662158417049795,
+    "bitrate_bps": 12140191.663513558,
+    "goodput_samples": [
+      {
+        "t": 0.6574,
+        "goodput_bps": 1092515.7213648804,
+        "bytes_acked": 89776,
+        "interval_sec": 0.6574
+      },
+      {
+        "t": 0.8698,
+        "goodput_bps": 1417698.4005327336,
+        "bytes_acked": 37648,
+        "interval_sec": 0.2124
+      },
+      {
+        "t": 1.0856,
+        "goodput_bps": 4510115.026346294,
+        "bytes_acked": 121632,
+        "interval_sec": 0.2157
+      },
+      {
+        "t": 1.3014,
+        "goodput_bps": 8588893.867967093,
+        "bytes_acked": 231680,
+        "interval_sec": 0.2158
+      },
+      {
+        "t": 6.5035,
+        "goodput_bps": 3280053.3066926994,
+        "bytes_acked": 2132904,
+        "interval_sec": 5.2021
+      },
+      {
+        "t": 7.3729,
+        "goodput_bps": 399721.9741890635,
+        "bytes_acked": 43440,
+        "interval_sec": 0.8694
+      },
+      {
+        "t": 7.8179,
+        "goodput_bps": 2421039.414279344,
+        "bytes_acked": 134664,
+        "interval_sec": 0.445
+      },
+      {
+        "t": 8.0424,
+        "goodput_bps": 5004125.3977838345,
+        "bytes_acked": 140456,
+        "interval_sec": 0.2245
+      },
+      {
+        "t": 8.2466,
+        "goodput_bps": 5107247.0449888725,
+        "bytes_acked": 130320,
+        "interval_sec": 0.2041
+      },
+      {
+        "t": 13.7406,
+        "goodput_bps": 2375862.465557644,
+        "bytes_acked": 1631648,
+        "interval_sec": 5.4941
+      },
+      {
+        "t": 15.0473,
+        "goodput_bps": 682613.9443142157,
+        "bytes_acked": 111496,
+        "interval_sec": 1.3067
+      },
+      {
+        "t": 15.2663,
+        "goodput_bps": 4127252.286133006,
+        "bytes_acked": 112944,
+        "interval_sec": 0.2189
+      },
+      {
+        "t": 15.4817,
+        "goodput_bps": 6505037.449658744,
+        "bytes_acked": 175208,
+        "interval_sec": 0.2155
+      },
+      {
+        "t": 15.7046,
+        "goodput_bps": 14499727.033455463,
+        "bytes_acked": 403992,
+        "interval_sec": 0.2229
+      },
+      {
+        "t": 15.9368,
+        "goodput_bps": 16864416.945721693,
+        "bytes_acked": 489424,
+        "interval_sec": 0.2322
+      },
+      {
+        "t": 16.1692,
+        "goodput_bps": 17744351.068670258,
+        "bytes_acked": 515488,
+        "interval_sec": 0.2324
+      },
+      {
+        "t": 16.4006,
+        "goodput_bps": 17772274.794239443,
+        "bytes_acked": 514040,
+        "interval_sec": 0.2314
+      },
+      {
+        "t": 16.628,
+        "goodput_bps": 18084445.38288035,
+        "bytes_acked": 514040,
+        "interval_sec": 0.2274
+      },
+      {
+        "t": 16.845,
+        "goodput_bps": 18099092.79899552,
+        "bytes_acked": 490872,
+        "interval_sec": 0.217
+      },
+      {
+        "t": 17.068,
+        "goodput_bps": 19169128.425377227,
+        "bytes_acked": 534312,
+        "interval_sec": 0.223
+      },
+      {
+        "t": 17.2906,
+        "goodput_bps": 18731016.739374895,
+        "bytes_acked": 521280,
+        "interval_sec": 0.2226
+      },
+      {
+        "t": 17.5105,
+        "goodput_bps": 18809524.860973686,
+        "bytes_acked": 516936,
+        "interval_sec": 0.2199
+      },
+      {
+        "t": 17.7192,
+        "goodput_bps": 18426207.088163078,
+        "bytes_acked": 480736,
+        "interval_sec": 0.2087
+      },
+      {
+        "t": 17.9436,
+        "goodput_bps": 18838618.77195938,
+        "bytes_acked": 528520,
+        "interval_sec": 0.2244
+      },
+      {
+        "t": 18.1578,
+        "goodput_bps": 19415854.526623927,
+        "bytes_acked": 519832,
+        "interval_sec": 0.2142
+      },
+      {
+        "t": 18.3728,
+        "goodput_bps": 19446364.469179228,
+        "bytes_acked": 522728,
+        "interval_sec": 0.215
+      },
+      {
+        "t": 18.5838,
+        "goodput_bps": 19440960.128510587,
+        "bytes_acked": 512592,
+        "interval_sec": 0.2109
+      },
+      {
+        "t": 18.8026,
+        "goodput_bps": 19371222.768302556,
+        "bytes_acked": 529968,
+        "interval_sec": 0.2189
+      },
+      {
+        "t": 19.0201,
+        "goodput_bps": 18808326.641192053,
+        "bytes_acked": 511144,
+        "interval_sec": 0.2174
+      },
+      {
+        "t": 19.2343,
+        "goodput_bps": 19628712.462958146,
+        "bytes_acked": 525624,
+        "interval_sec": 0.2142
+      },
+      {
+        "t": 19.4504,
+        "goodput_bps": 19134929.431361854,
+        "bytes_acked": 516936,
+        "interval_sec": 0.2161
+      },
+      {
+        "t": 19.6703,
+        "goodput_bps": 19699758.402522884,
+        "bytes_acked": 541552,
+        "interval_sec": 0.2199
+      },
+      {
+        "t": 19.9085,
+        "goodput_bps": 17852052.712992344,
+        "bytes_acked": 531416,
+        "interval_sec": 0.2381
+      },
+      {
+        "t": 20.1242,
+        "goodput_bps": 18094351.047040492,
+        "bytes_acked": 487976,
+        "interval_sec": 0.2157
+      },
+      {
+        "t": 20.3425,
+        "goodput_bps": 19632242.117078666,
+        "bytes_acked": 535760,
+        "interval_sec": 0.2183
+      },
+      {
+        "t": 20.5552,
+        "goodput_bps": 19443974.98692201,
+        "bytes_acked": 516936,
+        "interval_sec": 0.2127
+      },
+      {
+        "t": 20.7697,
+        "goodput_bps": 19551727.134471685,
+        "bytes_acked": 524176,
+        "interval_sec": 0.2145
+      },
+      {
+        "t": 20.992,
+        "goodput_bps": 18446112.19674235,
+        "bytes_acked": 512592,
+        "interval_sec": 0.2223
+      },
+      {
+        "t": 21.213,
+        "goodput_bps": 18920236.55337504,
+        "bytes_acked": 522728,
+        "interval_sec": 0.221
+      },
+      {
+        "t": 21.4267,
+        "goodput_bps": 19460271.723110277,
+        "bytes_acked": 519832,
+        "interval_sec": 0.2137
+      },
+      {
+        "t": 21.6432,
+        "goodput_bps": 19637907.696328655,
+        "bytes_acked": 531416,
+        "interval_sec": 0.2165
+      },
+      {
+        "t": 21.8559,
+        "goodput_bps": 19658926.955003597,
+        "bytes_acked": 522728,
+        "interval_sec": 0.2127
+      },
+      {
+        "t": 22.0992,
+        "goodput_bps": 21568432.479409125,
+        "bytes_acked": 655944,
+        "interval_sec": 0.2433
+      },
+      {
+        "t": 22.3232,
+        "goodput_bps": 18675540.905298535,
+        "bytes_acked": 522728,
+        "interval_sec": 0.2239
+      },
+      {
+        "t": 22.5384,
+        "goodput_bps": 19323509.69690916,
+        "bytes_acked": 519832,
+        "interval_sec": 0.2152
+      },
+      {
+        "t": 22.7426,
+        "goodput_bps": 20479210.177774355,
+        "bytes_acked": 522728,
+        "interval_sec": 0.2042
+      },
+      {
+        "t": 22.958,
+        "goodput_bps": 19679107.489622716,
+        "bytes_acked": 529968,
+        "interval_sec": 0.2154
+      },
+      {
+        "t": 23.1737,
+        "goodput_bps": 19492296.958029047,
+        "bytes_acked": 525624,
+        "interval_sec": 0.2157
+      },
+      {
+        "t": 23.3764,
+        "goodput_bps": 19835192.22603624,
+        "bytes_acked": 502456,
+        "interval_sec": 0.2027
+      },
+      {
+        "t": 23.6292,
+        "goodput_bps": 20938703.854126576,
+        "bytes_acked": 661736,
+        "interval_sec": 0.2528
+      },
+      {
+        "t": 23.8378,
+        "goodput_bps": 19769189.527685452,
+        "bytes_acked": 515488,
+        "interval_sec": 0.2086
+      },
+      {
+        "t": 24.0455,
+        "goodput_bps": 20530038.75206373,
+        "bytes_acked": 532864,
+        "interval_sec": 0.2076
+      },
+      {
+        "t": 24.2568,
+        "goodput_bps": 19730643.397535,
+        "bytes_acked": 521280,
+        "interval_sec": 0.2114
+      },
+      {
+        "t": 24.504,
+        "goodput_bps": 21133256.335161466,
+        "bytes_acked": 653048,
+        "interval_sec": 0.2472
+      },
+      {
+        "t": 24.7508,
+        "goodput_bps": 20608939.28291227,
+        "bytes_acked": 635672,
+        "interval_sec": 0.2468
+      },
+      {
+        "t": 24.9941,
+        "goodput_bps": 21379608.512145214,
+        "bytes_acked": 650152,
+        "interval_sec": 0.2433
+      },
+      {
+        "t": 25.2196,
+        "goodput_bps": 22651166.434867296,
+        "bytes_acked": 638568,
+        "interval_sec": 0.2255
+      },
+      {
+        "t": 25.446,
+        "goodput_bps": 22360950.51267823,
+        "bytes_acked": 632776,
+        "interval_sec": 0.2264
+      },
+      {
+        "t": 25.6526,
+        "goodput_bps": 20296977.506496243,
+        "bytes_acked": 524176,
+        "interval_sec": 0.2066
+      },
+      {
+        "t": 25.8737,
+        "goodput_bps": 22842713.992783785,
+        "bytes_acked": 631328,
+        "interval_sec": 0.2211
+      },
+      {
+        "t": 26.093,
+        "goodput_bps": 23132386.04873202,
+        "bytes_acked": 634224,
+        "interval_sec": 0.2193
+      },
+      {
+        "t": 26.2933,
+        "goodput_bps": 20012448.47408159,
+        "bytes_acked": 501008,
+        "interval_sec": 0.2003
+      },
+      {
+        "t": 26.5097,
+        "goodput_bps": 23393301.039729614,
+        "bytes_acked": 632776,
+        "interval_sec": 0.2164
+      },
+      {
+        "t": 26.7173,
+        "goodput_bps": 23601512.694650944,
+        "bytes_acked": 612504,
+        "interval_sec": 0.2076
+      },
+      {
+        "t": 26.9609,
+        "goodput_bps": 24496155.38837486,
+        "bytes_acked": 745720,
+        "interval_sec": 0.2435
+      },
+      {
+        "t": 27.1715,
+        "goodput_bps": 24252761.101939667,
+        "bytes_acked": 638568,
+        "interval_sec": 0.2106
+      },
+      {
+        "t": 27.3765,
+        "goodput_bps": 25705573.294460624,
+        "bytes_acked": 658840,
+        "interval_sec": 0.205
+      },
+      {
+        "t": 27.6051,
+        "goodput_bps": 25647830.992493674,
+        "bytes_acked": 732688,
+        "interval_sec": 0.2285
+      },
+      {
+        "t": 27.8301,
+        "goodput_bps": 26873591.03389949,
+        "bytes_acked": 755856,
+        "interval_sec": 0.225
+      },
+      {
+        "t": 28.0575,
+        "goodput_bps": 25871973.444538455,
+        "bytes_acked": 735584,
+        "interval_sec": 0.2275
+      },
+      {
+        "t": 28.2786,
+        "goodput_bps": 27826617.802603647,
+        "bytes_acked": 768888,
+        "interval_sec": 0.2211
+      },
+      {
+        "t": 28.5138,
+        "goodput_bps": 28562950.358233783,
+        "bytes_acked": 839840,
+        "interval_sec": 0.2352
+      },
+      {
+        "t": 28.7324,
+        "goodput_bps": 27449896.92238962,
+        "bytes_acked": 750064,
+        "interval_sec": 0.2186
+      },
+      {
+        "t": 28.9563,
+        "goodput_bps": 30889994.01565509,
+        "bytes_acked": 864456,
+        "interval_sec": 0.2239
+      },
+      {
+        "t": 29.1769,
+        "goodput_bps": 31029380.075491674,
+        "bytes_acked": 855768,
+        "interval_sec": 0.2206
+      },
+      {
+        "t": 29.3964,
+        "goodput_bps": 32196593.27360121,
+        "bytes_acked": 883280,
+        "interval_sec": 0.2195
+      },
+      {
+        "t": 29.6082,
+        "goodput_bps": 32602158.488859892,
+        "bytes_acked": 863008,
+        "interval_sec": 0.2118
+      },
+      {
+        "t": 29.816,
+        "goodput_bps": 33502109.214354143,
+        "bytes_acked": 870248,
+        "interval_sec": 0.2078
+      },
+      {
+        "t": 30.0102,
+        "goodput_bps": 34776121.20788196,
+        "bytes_acked": 844184,
+        "interval_sec": 0.1942
+      }
+    ]
+  }
+]
