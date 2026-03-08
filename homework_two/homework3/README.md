@@ -36,9 +36,15 @@ Full run:
 
 make
 sudo insmod algo.ko
+
 sysctl net.ipv4.tcp_available_congestion_control
+
 sudo sysctl -w net.ipv4.tcp_congestion_control=algo
+
 sysctl net.ipv4.tcp_congestion_control
+
 sudo sysctl -w net.ipv4.tcp_congestion_control=cubic
+
 sudo rmmod algo
+
 make clean
