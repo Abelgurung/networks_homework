@@ -58,6 +58,18 @@ Outputs:
 - `generated_data/tcp_stats.csv` — flat CSV with one row per sample
 - `generated_data/tcp_stats.json` — structured JSON grouped by server
 
+**Generate Q2(b) PDF plots**
+
+```bash
+python tcp_stats_plot.py
+```
+
+Produces two PDF files for one representative destination chosen automatically from the JSON data:
+- `plots/tcp_stats_plots_timeseries.pdf`
+- `plots/tcp_stats_plots_scatter.pdf`
+
+**Plot options:** `python tcp_stats_plot.py [input.json] -o plots/output.pdf --server-label "partial label"`
+
 **Single server:**
 
 ```bash
