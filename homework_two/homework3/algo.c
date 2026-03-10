@@ -43,7 +43,7 @@ static u32 algo_windowed_avg_rtt(const struct algo *ca)
 {
 	u64 summ = 0;
 	int i;
-	
+
 	if (ca->rtt_cnt == 0)
 		return 0;
 
@@ -76,7 +76,7 @@ static void algo_cong_avoid(struct sock *sk, u32 ack, u32 acked)
 	if (!tcp_is_cwnd_limited(sk))
 		return;
 
-	// for some reason, it's stored like this in linux
+	// for some reason, it's stored like this in linux (3 bit shifted)
 	srtt_us = tp->srtt_us >> 3;
 
 	// update window

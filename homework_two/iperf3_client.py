@@ -188,6 +188,7 @@ class Iperf3Client:
         duration: int = DEFAULT_DURATION,
         blksize: int = DEFAULT_TCP_BLKSIZE,
         num_streams: int = 1,
+        cc_algo: str = "cubic",
         verbose: bool = False,
     ):
         self.server = server
@@ -195,6 +196,7 @@ class Iperf3Client:
         self.duration = duration
         self.blksize = blksize
         self.num_streams = num_streams
+        self.cc_algo = cc_algo
         self.verbose = verbose
 
         self.cookie: bytes = make_cookie()
@@ -217,6 +219,21 @@ class Iperf3Client:
             (self.server, self.port), timeout=CONNECT_TIMEOUT
         )
         sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+        sock.setsockopt(
+            socket.IPPROTO_TCP,
+            socket.TCP_CONGESTION,
+            self.cc_algo.encode("ascii"),
+        )
+
+        # read back actual congestion control in use
+        actual_cc = sock.getsockopt(
+            socket.IPPROTO_TCP,
+            socket.TCP_CONGESTION,
+            32
+        ).rstrip(b"\x00").decode("ascii", errors="ignore")
+
+        print(f"[cc] requested={self.cc_algo} actual={actual_cc}")
+
         return sock
 
     def _open_control(self) -> None:
@@ -597,6 +614,7 @@ def run_multi_destination(
     duration: int,
     blksize: int,
     num_streams: int,
+    cc_algo: str,
     verbose: bool,
 ) -> list[dict]:
     """
@@ -635,6 +653,7 @@ def run_multi_destination(
             duration=duration,
             blksize=blksize,
             num_streams=num_streams,
+            cc_algo = cc_algo,
             verbose=verbose,
         )
 
@@ -736,6 +755,11 @@ def main() -> None:
         help="Enable verbose/debug output"
     )
 
+    parser.add_argument(
+        "--cc", default="cubic",
+        help="TCP congestion control algorithm (cubic, reno, algo)"
+    )
+
     args = parser.parse_args()
 
     # ---- Auto mode: fetch list and iterate over n random servers -----------
@@ -759,6 +783,7 @@ def main() -> None:
         port=args.port,
         duration=args.duration,
         blksize=args.blocksize,
+        cc_algo=args.cc,        
         num_streams=args.streams,
         verbose=args.verbose,
     )

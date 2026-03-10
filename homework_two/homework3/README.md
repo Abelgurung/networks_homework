@@ -48,7 +48,20 @@ Unload it:
 sudo rmmod algo
 ```
 
-Full run:
+To test with iperf:
+
+Run an iperf server:
+```bash
+iperf3 -s
+```
+
+Now in a different terminal, run
+
+```bash
+python3 iperf3_client.py 127.0.0.1 -p 5201 -t 10 --cc algo
+```
+
+Full run to compile and sanity check:
 
 ```bash
 make
@@ -57,6 +70,16 @@ sysctl net.ipv4.tcp_available_congestion_control
 sudo sysctl -w net.ipv4.tcp_congestion_control=algo
 sysctl net.ipv4.tcp_congestion_control
 sudo sysctl -w net.ipv4.tcp_congestion_control=cubic
+sudo rmmod algo
+make clean
+```
+
+Full run (assuming iperf server is running):
+
+```bash
+make
+sudo insmod algo.ko
+python3 iperf3_client.py 127.0.0.1 -p 5201 -t 10 --cc algo
 sudo rmmod algo
 make clean
 ```
