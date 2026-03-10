@@ -78,8 +78,8 @@ Full run (assuming iperf server is running):
 
 ```bash
 make
-sudo insmod algo.ko
-python3 iperf3_client.py 127.0.0.1 -p 5201 -t 10 --cc algo
+sudo insmod algo.ko 
+python3 ../iperf3_client.py 127.0.0.1 -p 5201 -t 10 --cc algo
 sudo rmmod algo
 make clean
 ```
