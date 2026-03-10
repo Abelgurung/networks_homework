@@ -769,6 +769,7 @@ def main() -> None:
             duration=args.duration,
             blksize=args.blocksize,
             num_streams=args.streams,
+            cc_algo=args.cc,
             verbose=args.verbose,
         )
         print_final_table(results)

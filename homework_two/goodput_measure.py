@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import platform
 import select as _select
 import socket
@@ -350,6 +351,8 @@ def main() -> None:
         results = [summary]
     else:
         parser.error("Provide a server hostname, or use --auto mode.")
+
+    os.makedirs(os.path.dirname(args.output) or ".", exist_ok=True)
 
     output = []
     for r in results:

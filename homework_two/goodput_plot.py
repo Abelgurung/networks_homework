@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 
 import numpy as np
@@ -129,6 +130,7 @@ def main() -> None:
                 cell.set_text_props(ha="left")
                 cell.set_width(0.35)
 
+    os.makedirs(os.path.dirname(args.output) or ".", exist_ok=True)
     plt.tight_layout(rect=[0, 0, 1, 0.95])
     plt.savefig(
         args.output, dpi=150, bbox_inches="tight",
