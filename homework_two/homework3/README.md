@@ -1,15 +1,22 @@
-To see all the available algos:
+This has been tested on Linux 5.10 and Ubuntu 20.04
+
+### Prereq:
+```bash
+sudo apt-get install -y build-essential linux-headers-$(uname -r)
+```
+
+### To see all the available congestion control algos:
 ```bash
 sysctl net.ipv4.tcp_available_congestion_control
 ```
 
-To change the current algo(systemwide):
+### To change the current algo(systemwide):
 
 ```bash
 sudo sysctl -w net.ipv4.tcp_congestion_control=reno
 ```
 
-To change the current algo inside code for the run (didn't test these):
+### To change the current algo inside code for the run:
 
 In C:
 
@@ -24,33 +31,32 @@ In python:
 sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_CONGESTION, b"algo")
 ```
 
-Prereq:
-
+### Compile the Kernel module:
 ```bash
-sudo apt-get install -y build-essential linux-headers-$(uname -r)
+make
 ```
 
-Load it:
+### Load the Congestion Control Algorithm module:
 
 ```bash
 sudo insmod algo.ko
 ```
 
-Check it:
+### Check if the algorithm changed (Gives a list of all available algorithms in the Kernel, including the default CUBIC and RENO):
 
 ```bash
 sysctl net.ipv4.tcp_available_congestion_control
 ```
 
-Unload it: 
+### Unload your module: 
 
 ```bash
 sudo rmmod algo
 ```
 
-To test with iperf:
+### To test Locally with iperf:
 
-Run an iperf server:
+Run a local iperf server:
 ```bash
 iperf3 -s
 ```
@@ -61,7 +67,7 @@ Now in a different terminal, run
 python3 iperf3_client.py 127.0.0.1 -p 5201 -t 10 --cc algo
 ```
 
-Full run to compile and sanity check:
+### Full run to compile and sanity check:
 
 ```bash
 make
@@ -74,7 +80,9 @@ sudo rmmod algo
 make clean
 ```
 
-Full run (assuming iperf server is running):
+### Full run:
+
+Make sure iperf server is running (if local), or modify the ip and port for an online server
 
 ```bash
 make
