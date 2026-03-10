@@ -8,7 +8,10 @@
 // if RTT rises, stop increasing
 // if packet loss, half the window
 
+// 5 percent buffer in RTT change
 #define RTT_BUFFER 105
+
+// circular buffer size
 #define RTT_WINDOW 5
 
 // circular buffer
@@ -83,7 +86,7 @@ static void algo_cong_avoid(struct sock *sk, u32 ack, u32 acked)
 	algo_add_rtt_sample(ca, srtt_us);
 	avg_rtt_us = algo_windowed_avg_rtt(ca);
 
-	//slowstart if below threshhold
+	//slowstart if below threshhold (sender congestion window < slowstart threshold)
 	if (tp->snd_cwnd < tp->snd_ssthresh) {
 		acked = tcp_slow_start(tp, acked);
 		if (!acked)

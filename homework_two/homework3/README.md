@@ -1,4 +1,4 @@
-This has been tested on Linux 5.10 and Ubuntu 20.04
+This has been tested on Linux 5.10 VM and Ubuntu 20.04(Linux 5.15).
 
 ### Prereq:
 ```bash
@@ -67,7 +67,7 @@ Now in a different terminal, run
 python3 iperf3_client.py 127.0.0.1 -p 5201 -t 10 --cc algo
 ```
 
-### Full run to compile and sanity check:
+### Full run to compile and sanity check (or if you want to add the module systemwide):
 
 ```bash
 make
