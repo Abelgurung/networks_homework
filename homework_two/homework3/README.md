@@ -91,3 +91,29 @@ python3 ../iperf3_client.py 127.0.0.1 -p 5201 -t 10 --cc algo
 sudo rmmod algo
 make clean
 ```
+
+### Assignment 3: Collect data and generate comparison plots
+
+This runs data collection for all three algorithms (cubic, reno, algo) and then
+generates the comparison plots used in the report. Requires the kernel module to
+be loaded first.
+
+```bash
+cd homework3
+make
+sudo insmod algo.ko
+cd ..
+sudo bash run_hw3.sh
+```
+
+Data is saved to `generated_data/{algo,cubic,reno}.json` and comparison plots
+are written to `plots/opt1_throughput.pdf`, `plots/opt1_rtt.pdf`, and
+`plots/opt1_loss.pdf`.
+
+If you already have the data and only need to regenerate the plots:
+
+```bash
+python3 hw3_compare_plot.py
+```
+
+Run `python3 hw3_compare_plot.py --help` for available options.
