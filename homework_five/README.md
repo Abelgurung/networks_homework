@@ -40,26 +40,14 @@ This will:
    - `allgather_bench/allgather_vs_message_size.png`
    - `allgather_bench/allgather_vs_world_size.png`
 
-## Why the launcher is configured this way
-
-On some machines, especially macOS, `torchrun --standalone` may try to use a bad IPv6 hostname and hang during rendezvous. This bundle avoids that by explicitly using local IPv4 loopback:
-
-- `MASTER_ADDR=127.0.0.1`
-- `MASTER_PORT=29500`
-- `GLOO_SOCKET_IFNAME=lo0` on macOS, or `lo` on Linux
-
-Those defaults are set automatically in `run.sh` and `run_all.py`.
-
 ## Run the Python driver directly
-
-If your virtualenv is already set up, you can skip `run.sh` and run:
 
 ```bash
 source .venv/bin/activate
 python run_all.py
 ```
 
-You can also override settings:
+override settings:
 
 ```bash
 python run_all.py \
@@ -69,7 +57,6 @@ python run_all.py \
   --fixed-msg-bytes 1048576
 ```
 
-You can override the rendezvous settings too:
 
 ```bash
 python run_all.py --master-port 29600 --gloo-ifname lo0
