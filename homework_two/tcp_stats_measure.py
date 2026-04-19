@@ -357,6 +357,7 @@ def run_tcp_stats_tests(
     blksize: int,
     num_streams: int,
     interval: float,
+    cc_algo: str,
     verbose: bool,
 ) -> list[dict]:
     full_list = fetch_server_list(verbose)
@@ -389,6 +390,7 @@ def run_tcp_stats_tests(
             blksize=blksize,
             num_streams=num_streams,
             verbose=verbose,
+            cc_algo=cc_algo,
             interval=interval,
         )
 
@@ -495,6 +497,11 @@ def main() -> None:
         help="Output JSON file (default generated_data/tcp_stats.json)",
     )
 
+    parser.add_argument(
+        "--cc", default="cubic",
+        help="TCP congestion control algorithm (cubic, reno, algo)"
+    )
+
     args = parser.parse_args()
 
     if args.auto:
@@ -504,6 +511,7 @@ def main() -> None:
             blksize=args.blocksize,
             num_streams=args.streams,
             interval=args.interval,
+            cc_algo=args.cc,
             verbose=args.verbose,
         )
     elif args.server:
@@ -513,6 +521,7 @@ def main() -> None:
             duration=args.duration,
             blksize=args.blocksize,
             num_streams=args.streams,
+            cc_algo=args.cc_algo,
             verbose=args.verbose,
             interval=args.interval,
         )
