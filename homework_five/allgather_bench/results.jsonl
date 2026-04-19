@@ -1,0 +1,3 @@
+{"algorithm": "ring", "world_size": 8, "msg_bytes_per_rank": 1024, "samples_ms": [98.23740499996347], "median_ms": 98.23740499996347, "min_ms": 98.23740499996347, "max_ms": 98.23740499996347}
+{"algorithm": "ring", "world_size": 8, "msg_bytes_per_rank": 65536, "samples_ms": [99.01435300002959], "median_ms": 99.01435300002959, "min_ms": 99.01435300002959, "max_ms": 99.01435300002959}
+{"algorithm": "ring", "world_size": 8, "msg_bytes_per_rank": 1048576, "samples_ms": [191.19415399995887], "median_ms": 191.19415399995887, "min_ms": 191.19415399995887, "max_ms": 191.19415399995887}
