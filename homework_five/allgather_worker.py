@@ -3,11 +3,11 @@ from pathlib import Path
 import torch
 import torch.distributed as dist
 
-
+# number of ranks should be a power of 2
 def is_power_of_two(n: int) -> bool:
     return n > 0 and (n & (n - 1)) == 0
 
-
+# offset seq for swing
 def swing_rho(step: int) -> int:
     return (1 - ((-2) ** (step + 1))) // 3
 
@@ -21,6 +21,11 @@ def _wait_all(reqs):
     for req in reqs:
         req.wait()
 
+# the layout is:
+# bytes 0 .. m-1 belong to rank 0
+# bytes m .. 2m-1 belong to rank 1
+# ...
+# bytes (p-1)m .. pm-1 belong to rank p-1
 
 def ring_allgather(local: torch.Tensor, world_size: int, rank: int) -> torch.Tensor:
     m = local.numel()
@@ -29,10 +34,10 @@ def ring_allgather(local: torch.Tensor, world_size: int, rank: int) -> torch.Ten
     left = (rank - 1 + world_size) % world_size
     right = (rank + 1) % world_size
     for step in range(world_size - 1):
-        send_idx = (rank - step) % world_size
+        send_idx = (rank - step) % world_size # at every step, it sends out what it learned in the last step
         recv_idx = (rank - step - 1) % world_size
         ops = [
-            dist.P2POp(dist.isend, out[send_idx].contiguous(), right, tag=1000 + step),
+            dist.P2POp(dist.isend, out[send_idx].contiguous(), right, tag=1000 + step), #point to point communication - nonblocking send and rcv
             dist.P2POp(dist.irecv, out[recv_idx], left, tag=1000 + step),
         ]
         _wait_all(dist.batch_isend_irecv(ops))
@@ -67,11 +72,11 @@ def swing_allgather(local: torch.Tensor, world_size: int, rank: int) -> torch.Te
     known = [rank]
     logp = int(math.log2(world_size))
     for phase in range(logp):
-        step = logp - 1 - phase
-        peer = swing_peer(rank, step, world_size)
-        send_ids = torch.tensor(sorted(known), dtype=torch.int64)
+        step = logp - 1 - phase # reverse step order relative to phase
+        peer = swing_peer(rank, step, world_size) # choose a peer
+        send_ids = torch.tensor(sorted(known), dtype=torch.int64) # send the list of known block IDs
         recv_ids = torch.empty(len(known), dtype=torch.int64)
-        send_blocks = torch.cat([out[i].contiguous() for i in send_ids.tolist()], dim=0)
+        send_blocks = torch.cat([out[i].contiguous() for i in send_ids.tolist()], dim=0) # send the actual concatenated payload for those IDs
         recv_blocks = torch.empty_like(send_blocks)
         ops = [
             dist.P2POp(dist.isend, send_ids, peer, tag=3000 + phase),
@@ -112,12 +117,12 @@ def main():
     ap.add_argument('--iters', type=int, default=1)
     ap.add_argument('--result-file', required=True)
     args = ap.parse_args()
-    rank = int(os.environ['RANK'])
-    world_size = int(os.environ['WORLD_SIZE'])
+    rank = int(os.environ['RANK']) # process index
+    world_size = int(os.environ['WORLD_SIZE']) # number of processes
     os.environ.setdefault('OMP_NUM_THREADS', '1')
     torch.set_num_threads(1)
     dist.init_process_group('gloo')
-    local = torch.full((args.msg_bytes,), rank % 251, dtype=torch.uint8)
+    local = torch.full((args.msg_bytes,), rank % 251, dtype=torch.uint8) # Each rank’s local message is a one-dimensional byte tensor of length msg_bytes
     gathered = run_algo(args.algo, local, world_size, rank)
     verify(gathered, args.msg_bytes, world_size)
     dist.barrier()
