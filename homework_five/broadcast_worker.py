@@ -19,7 +19,7 @@ def binary_tree_broadcast(buf: torch.Tensor, world_size: int, rank: int, root: i
     # Receive from parent (unless we are the root)
     if vrank != 0:
         parent = ((vrank - 1) // 2 + root) % world_size
-        ops = [dist.P2POp(dist.irecv, buf, parent, tag=5000)]
+        ops = [dist.P2POp(dist.irecv, buf, parent)]
         _wait_all(dist.batch_isend_irecv(ops))
     # Sending the same buffer to both children is safe (both ops only read from it).
     ops = []
@@ -30,10 +30,10 @@ def binary_tree_broadcast(buf: torch.Tensor, world_size: int, rank: int, root: i
 
     if left_v < world_size:
         left = (left_v + root) % world_size
-        ops.append(dist.P2POp(dist.isend, buf, left, tag=5001))
+        ops.append(dist.P2POp(dist.isend, buf, left))
     if right_v < world_size:
         right = (right_v + root) % world_size
-        ops.append(dist.P2POp(dist.isend, buf, right, tag=5002))
+        ops.append(dist.P2POp(dist.isend, buf, right))
     if ops:
         _wait_all(dist.batch_isend_irecv(ops))
     return buf
@@ -48,12 +48,12 @@ def binomial_tree_broadcast(buf: torch.Tensor, world_size: int, rank: int, root:
             peer_v = vrank + mask
             if peer_v < world_size:
                 peer = (peer_v + root) % world_size
-                ops = [dist.P2POp(dist.isend, buf, peer, tag=6000 + k)]
+                ops = [dist.P2POp(dist.isend, buf, peer)]
                 _wait_all(dist.batch_isend_irecv(ops))
         elif vrank < (mask << 1):
             peer_v = vrank - mask
             peer = (peer_v + root) % world_size
-            ops = [dist.P2POp(dist.irecv, buf, peer, tag=6000 + k)]
+            ops = [dist.P2POp(dist.irecv, buf, peer)]
             _wait_all(dist.batch_isend_irecv(ops))
         mask <<= 1
     return buf
