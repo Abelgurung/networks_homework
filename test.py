@@ -1,41 +1,24 @@
 import os
-import socket
-from datetime import timedelta
-
+import sys
 import torch
 import torch.distributed as dist
 
+# Each machine passes in one number
+my_number = float(sys.argv[1])
 
-def main():
-    dist.init_process_group(
-        backend="gloo",
-        timeout=timedelta(seconds=60),
-    )
+dist.init_process_group(
+    backend="gloo",
+    init_method="env://",
+)
 
-    rank = dist.get_rank()
-    world_size = dist.get_world_size()
-    hostname = socket.gethostname()
+x = torch.tensor([my_number])
 
-    # Test 1: all_reduce
-    x = torch.tensor([rank], dtype=torch.float32)
-    dist.all_reduce(x, op=dist.ReduceOp.SUM)
+# Sum x across both machines
+dist.all_reduce(x, op=dist.ReduceOp.SUM)
 
-    # Test 2: all_gather
-    gathered = [torch.zeros(1) for _ in range(world_size)]
-    my_value = torch.tensor([rank], dtype=torch.float32)
-    dist.all_gather(gathered, my_value)
+rank = dist.get_rank()
 
-    print(
-        f"host={hostname} "
-        f"rank={rank}/{world_size} "
-        f"all_reduce_sum={x.item()} "
-        f"all_gather={[int(t.item()) for t in gathered]}",
-        flush=True,
-    )
+if rank == 0:
+    print("Sum =", x.item())
 
-    dist.barrier()
-    dist.destroy_process_group()
-
-
-if __name__ == "__main__":
-    main()
+dist.destroy_process_group()
