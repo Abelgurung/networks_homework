@@ -2,6 +2,7 @@ import argparse, json, math, os, statistics, time
 from pathlib import Path
 import torch
 import torch.distributed as dist
+import datetime
 
 # number of ranks should be a power of 2
 def is_power_of_two(n: int) -> bool:
@@ -112,16 +113,36 @@ def verify(gathered, msg_bytes, world_size):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--algo', required=True)
-    ap.add_argument('--msg-bytes', type=int, required=True)
+    ap.add_argument('--algo', default='ring')
+    ap.add_argument('--msg-bytes', type=int, default=1024)
     ap.add_argument('--iters', type=int, default=1)
-    ap.add_argument('--result-file', required=True)
+    ap.add_argument('--result-file', default=None)
     args = ap.parse_args()
     rank = int(os.environ['RANK']) # process index
     world_size = int(os.environ['WORLD_SIZE']) # number of processes
     os.environ.setdefault('OMP_NUM_THREADS', '1')
     torch.set_num_threads(1)
-    dist.init_process_group('gloo')
+
+    if args.result_file is None:
+        args.result_file = f'allgather_{args.algo}_{args.msg_bytes}_{rank}.json'
+
+    print(
+        f"Rank {rank}: initializing with "
+        f"MASTER_ADDR={os.environ.get('MASTER_ADDR')} "
+        f"MASTER_PORT={os.environ.get('MASTER_PORT')} "
+        f"GLOO_SOCKET_IFNAME={os.environ.get('GLOO_SOCKET_IFNAME')}",
+        flush=True,
+    )
+
+    dist.init_process_group(
+        backend="gloo",
+        init_method="env://",
+        rank=rank,
+        world_size=world_size,
+        timeout=datetime.timedelta(seconds=30),
+    )
+
+    print(f"Rank {rank}: initialized", flush=True)
     local = torch.full((args.msg_bytes,), rank % 251, dtype=torch.uint8) # Each rank’s local message is a one-dimensional byte tensor of length msg_bytes
     gathered = run_algo(args.algo, local, world_size, rank)
     verify(gathered, args.msg_bytes, world_size)
