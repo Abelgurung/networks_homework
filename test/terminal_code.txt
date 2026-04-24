@@ -1,0 +1,6 @@
+GLOO_SOCKET_IFNAME=lo0 \
+MASTER_ADDR=192.168.1.1 \
+MASTER_PORT=29503 \
+WORLD_SIZE=2 \
+RANK=1 \
+python3 allgather_worker.py
