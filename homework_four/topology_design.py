@@ -42,7 +42,8 @@ from gurobipy import GRB
 
 
 def solve_topology(T: np.ndarray, d: int = 4, time_limit: float | None = None,
-                   verbose: bool = False) -> dict:
+                   verbose: bool = False,
+                   enforce_rotational_symmetry: bool = False) -> dict:
     """Solve the joint topology design + multi-commodity flow MILP.
 
     Parameters
@@ -52,6 +53,10 @@ def solve_topology(T: np.ndarray, d: int = 4, time_limit: float | None = None,
     d : out-degree = in-degree bound per node (unit-capacity links).
     time_limit : optional wall-clock limit in seconds passed to Gurobi.
     verbose : print Gurobi log if True.
+    enforce_rotational_symmetry : if True, restrict the capacity matrix to
+        be invariant under the cyclic group Z_n acting on node labels, i.e.
+        ``c[u, v] = c[(u+1) % n, (v+1) % n]`` for every (u, v).  Equivalent
+        to a Cayley-graph topology on Z_n.
 
     Returns
     -------
@@ -75,6 +80,15 @@ def solve_topology(T: np.ndarray, d: int = 4, time_limit: float | None = None,
     c = model.addVars(n, n, vtype=GRB.INTEGER, lb=0, ub=d, name="c")
     for i in range(n):
         c[i, i].ub = 0  # no self-loops
+
+    if enforce_rotational_symmetry:
+        # c[u, v] depends only on (v - u) mod n  <=>  invariant under the
+        # cyclic shift (u, v) -> ((u+1) % n, (v+1) % n).
+        for u in range(n):
+            for v in range(n):
+                model.addConstr(
+                    c[u, v] == c[(u + 1) % n, (v + 1) % n],
+                    name=f"rot_sym_{u}_{v}")
 
     # only destinations that actually receive traffic need a commodity
     destinations = [t for t in range(n) if T[:, t].sum() > 1e-12]

@@ -35,7 +35,7 @@ def run(name: str, T: np.ndarray, n: int = 8, d: int = 4) -> None:
 
 def main() -> None:
     rng = np.random.default_rng(42)
-    n, d = 8, 4
+    n, d = 6, 2
 
     # 1. Uniform traffic matrix - sanity check: T_ij = d/(n-1).
     T_uniform = np.full((n, n), d / (n - 1))
