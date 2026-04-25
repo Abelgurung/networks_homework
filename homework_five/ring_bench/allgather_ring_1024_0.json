@@ -1,0 +1,1 @@
+{"algorithm": "ring", "world_size": 5, "msg_bytes_per_rank": 1024, "samples_ms": [22.459166997577995], "median_ms": 22.459166997577995, "min_ms": 22.459166997577995, "max_ms": 22.459166997577995}

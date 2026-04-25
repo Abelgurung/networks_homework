@@ -1,1 +1,1 @@
-{"algorithm": "recursive_doubling", "world_size": 8, "msg_bytes_per_rank": 65536, "samples_ms": [2.499541995348409, 2.417208001133986, 2.4402920025750063], "median_ms": 2.4402920025750063, "min_ms": 2.417208001133986, "max_ms": 2.499541995348409}
+{"algorithm": "recursive_doubling", "world_size": 8, "msg_bytes_per_rank": 65536, "samples_ms": [2.3862920061219484, 2.460750001773704, 2.174917004595045], "median_ms": 2.3862920061219484, "min_ms": 2.174917004595045, "max_ms": 2.460750001773704}

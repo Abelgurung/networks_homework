@@ -1,0 +1,1 @@
+{"algorithm": "recursive_doubling", "world_size": 8, "msg_bytes_per_rank": 512, "samples_ms": [1.7757910027285106, 1.3931659996160306, 1.3169579979148693], "median_ms": 1.3931659996160306, "min_ms": 1.3169579979148693, "max_ms": 1.7757910027285106}
