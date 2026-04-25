@@ -154,40 +154,46 @@ def main():
     if args.result_file is None:
         args.result_file = f'broadcast_{args.algo}_{args.msg_bytes}_{args.root}_{rank}.json'
 
-    store = make_store(rank, world_size)
+    store = None
+    try:
+        store = make_store(rank, world_size)
 
-    # Warm-up run (outside the timing loop)
-    buf = make_local(args.msg_bytes, rank, args.root)
-    buf = run_algo(args.algo, store, buf, world_size, rank, args.root, "warmup")
-    verify(buf, args.msg_bytes)
-    store_barrier(store, rank, world_size, "warmup")
-
-    samples = []
-    for i in range(args.iters):
-        # Reset buffer each iteration so non-root ranks start from the sentinel
-        # and verification catches missed receives.
+        # Warm-up run (outside the timing loop)
         buf = make_local(args.msg_bytes, rank, args.root)
-        store_barrier(store, rank, world_size, f"iter-{i}-pre")
-        t0 = time.perf_counter()
-        buf = run_algo(args.algo, store, buf, world_size, rank, args.root, f"iter-{i}")
-        store_barrier(store, rank, world_size, f"iter-{i}-post")
-        elapsed = (time.perf_counter() - t0) * 1000.0
+        buf = run_algo(args.algo, store, buf, world_size, rank, args.root, "warmup")
         verify(buf, args.msg_bytes)
-        # Report worst-rank completion time, matching allgather_worker.py.
-        samples.append(store_max(store, rank, world_size, f"iter-{i}", elapsed))
+        store_barrier(store, rank, world_size, "warmup")
 
-    if rank == 0:
-        result = {
-            'algorithm': args.algo,
-            'world_size': world_size,
-            'msg_bytes_per_rank': args.msg_bytes,
-            'root': args.root,
-            'samples_ms': samples,
-            'median_ms': statistics.median(samples),
-            'min_ms': min(samples),
-            'max_ms': max(samples),
-        }
-        Path(args.result_file).write_text(json.dumps(result))
+        samples = []
+        for i in range(args.iters):
+            # Reset buffer each iteration so non-root ranks start from the sentinel
+            # and verification catches missed receives.
+            buf = make_local(args.msg_bytes, rank, args.root)
+            store_barrier(store, rank, world_size, f"iter-{i}-pre")
+            t0 = time.perf_counter()
+            buf = run_algo(args.algo, store, buf, world_size, rank, args.root, f"iter-{i}")
+            store_barrier(store, rank, world_size, f"iter-{i}-post")
+            elapsed = (time.perf_counter() - t0) * 1000.0
+            verify(buf, args.msg_bytes)
+            # Report worst-rank completion time, matching allgather_worker.py.
+            samples.append(store_max(store, rank, world_size, f"iter-{i}", elapsed))
+
+        if rank == 0:
+            result = {
+                'algorithm': args.algo,
+                'world_size': world_size,
+                'msg_bytes_per_rank': args.msg_bytes,
+                'root': args.root,
+                'samples_ms': samples,
+                'median_ms': statistics.median(samples),
+                'min_ms': min(samples),
+                'max_ms': max(samples),
+            }
+            Path(args.result_file).write_text(json.dumps(result))
+        store_barrier(store, rank, world_size, "shutdown")
+    finally:
+        if store is not None:
+            del store
 
 
 if __name__ == '__main__':
