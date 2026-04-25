@@ -197,8 +197,6 @@ def main():
         verify(gathered, args.msg_bytes, world_size)
         samples.append(store_max(store, rank, world_size, f"iter-{i}", elapsed))
 
-    store_barrier(store, rank, world_size, "shutdown")
-
     if rank == 0:
         result = {
             'algorithm': args.algo,
@@ -210,6 +208,9 @@ def main():
             'max_ms': max(samples),
         }
         Path(args.result_file).write_text(json.dumps(result))
+
+    print("finishing")
+    store_barrier(store, rank, world_size, "shutdown")
 
 if __name__ == '__main__':
     main()
