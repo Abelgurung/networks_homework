@@ -21,8 +21,9 @@ def main():
     parser = argparse.ArgumentParser(description='Run all AllGather benchmarks and generate plots.')
     parser.add_argument('--out-dir', default='allgather_bench')
     parser.add_argument('--iters', type=int, default=3)
-    parser.add_argument('--world-sizes', nargs='+', type=int, default=[2, 4, 8])
-    parser.add_argument('--message-sizes-bytes', nargs='+', type=int, default=[1024, 65536, 1048576, 4194304])
+    parser.add_argument('--world-sizes', nargs='+', type=int, default=[2, 4, 8, 16])
+    parser.add_argument('--message-sizes-bytes', nargs='+', type=int, default=[1024, 4096, 16384, 65536, 262144, 1048576, 2097152])
+    parser.add_argument('--fixed-world-size', type=int, default=8)
     parser.add_argument('--fixed-msg-bytes', type=int, default=1048576)
     parser.add_argument('--master-addr', default='127.0.0.1')
     parser.add_argument('--master-port', type=int, default=29500)
@@ -35,7 +36,6 @@ def main():
     cases_dir.mkdir(parents=True, exist_ok=True)
 
     algorithms = ['ring', 'recursive_doubling', 'swing']
-    largest_world_size = max(args.world_sizes)
 
     torchrun = shutil.which('torchrun')
     if torchrun is None:
@@ -70,11 +70,11 @@ def main():
 
     for msg_bytes in args.message_sizes_bytes:
         for algorithm in algorithms:
-            run_case(largest_world_size, algorithm, msg_bytes)
+            run_case(args.fixed_world_size, algorithm, msg_bytes)
 
     for world_size in args.world_sizes:
         for algorithm in algorithms:
-            if world_size == largest_world_size and args.fixed_msg_bytes in args.message_sizes_bytes:
+            if world_size == args.fixed_world_size and args.fixed_msg_bytes in args.message_sizes_bytes:
                 continue
             run_case(world_size, algorithm, args.fixed_msg_bytes)
 
@@ -95,7 +95,7 @@ def main():
         'generate_plots.py',
         '--input', str(results_file),
         '--output-dir', str(out_dir),
-        '--fixed-world-size', str(largest_world_size),
+        '--fixed-world-size', str(args.fixed_world_size),
         '--fixed-msg-bytes', str(args.fixed_msg_bytes),
     ], env=child_env)
 

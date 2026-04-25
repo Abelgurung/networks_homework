@@ -1,0 +1,1 @@
+{"algorithm": "binomial_tree", "world_size": 16, "msg_bytes_per_rank": 1024, "root": 0, "samples_ms": [2.803082999889739, 2.5178330033668317, 2.250665995234158], "median_ms": 2.5178330033668317, "min_ms": 2.250665995234158, "max_ms": 2.803082999889739}
