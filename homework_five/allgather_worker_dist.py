@@ -182,37 +182,34 @@ def main():
     if args.result_file is None:
         args.result_file = f'allgather_{args.algo}_{args.msg_bytes}_{rank}.json'
 
-    store = None
-    try:
-        store = make_store(rank, world_size)
-        local = torch.full((args.msg_bytes,), rank % 251, dtype=torch.uint8) # Each rank’s local message is a one-dimensional byte tensor of length msg_bytes
-        gathered = run_algo(args.algo, store, local, world_size, rank, "warmup")
+    store = make_store(rank, world_size)
+    local = torch.full((args.msg_bytes,), rank % 251, dtype=torch.uint8) # Each rank’s local message is a one-dimensional byte tensor of length msg_bytes
+    gathered = run_algo(args.algo, store, local, world_size, rank, "warmup")
+    verify(gathered, args.msg_bytes, world_size)
+    store_barrier(store, rank, world_size, "warmup")
+    samples = []
+    for i in range(args.iters):
+        store_barrier(store, rank, world_size, f"iter-{i}-pre")
+        t0 = time.perf_counter()
+        gathered = run_algo(args.algo, store, local, world_size, rank, f"iter-{i}")
+        store_barrier(store, rank, world_size, f"iter-{i}-post")
+        elapsed = (time.perf_counter() - t0) * 1000.0
         verify(gathered, args.msg_bytes, world_size)
-        store_barrier(store, rank, world_size, "warmup")
-        samples = []
-        for i in range(args.iters):
-            store_barrier(store, rank, world_size, f"iter-{i}-pre")
-            t0 = time.perf_counter()
-            gathered = run_algo(args.algo, store, local, world_size, rank, f"iter-{i}")
-            store_barrier(store, rank, world_size, f"iter-{i}-post")
-            elapsed = (time.perf_counter() - t0) * 1000.0
-            verify(gathered, args.msg_bytes, world_size)
-            samples.append(store_max(store, rank, world_size, f"iter-{i}", elapsed))
-        if rank == 0:
-            result = {
-                'algorithm': args.algo,
-                'world_size': world_size,
-                'msg_bytes_per_rank': args.msg_bytes,
-                'samples_ms': samples,
-                'median_ms': statistics.median(samples),
-                'min_ms': min(samples),
-                'max_ms': max(samples),
-            }
-            Path(args.result_file).write_text(json.dumps(result))
-        store_barrier(store, rank, world_size, "shutdown")
-    finally:
-        if store is not None:
-            del store
+        samples.append(store_max(store, rank, world_size, f"iter-{i}", elapsed))
+
+    store_barrier(store, rank, world_size, "shutdown")
+
+    if rank == 0:
+        result = {
+            'algorithm': args.algo,
+            'world_size': world_size,
+            'msg_bytes_per_rank': args.msg_bytes,
+            'samples_ms': samples,
+            'median_ms': statistics.median(samples),
+            'min_ms': min(samples),
+            'max_ms': max(samples),
+        }
+        Path(args.result_file).write_text(json.dumps(result))
 
 if __name__ == '__main__':
     main()
